@@ -18,3 +18,13 @@
     --foreground: #ededed;
   }
 }
+
+.main-light{
+  color: #FF8B71;
+}
+.main-dark{
+  color: #FD7064;
+}
+.main-bg{
+  background-color:#FD7064;
+}
