@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import HeroSec from "./HeroSec"; 
 
 const navLinks = [
   { name: "Home", href: "/" },
@@ -18,7 +19,7 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 bg-white shadow-md">
-      <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-2 md:py-3">
+      <div className="max-w-7xl mx-auto flex items-center justify-between  px-4 py-2 md:py-3">
         {/* Logo */}
         <Link href="/" className="flex items-start gap-2 select-none ">
           <Image
@@ -30,6 +31,7 @@ export default function Header() {
             priority
           />
         </Link>
+         <div className="md:flex items-center justify-end ml-6">
 
         {/* Desktop Nav Items links */}
         <div className="hidden md:flex justify-end  ml-6">
@@ -45,16 +47,15 @@ export default function Header() {
             ))}
           </nav>
         </div>
+       
         {/* Donate Button */}
           <Link
             href="/donate"
-            className="ml-8 px-5 py-2  rounded-full bg-[#FF8B71] text-white font-semibold shadow hover:bg-[#FD7064] transition-colors duration-200 text-base"
+            className="ml-8 px-5 py-2   rounded-full bg-[#FF8B71] text-white font-semibold shadow hover:bg-[#FD7064] transition-colors duration-200 text-base"
           >
             Donate Now
           </Link>
-            
-      
-      
+          </div>
 
         {/* Hamburger (Mobile) */}
         <button
@@ -107,5 +108,9 @@ export default function Header() {
         )}
       </div>
     </header>
+  
+    
   );
+  <HeroSec />
+
 }
