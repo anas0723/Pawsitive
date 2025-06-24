@@ -111,6 +111,6 @@ export default function Header() {
   
     
   );
-  <HeroSec />
+  
 
 }

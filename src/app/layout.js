@@ -1,5 +1,6 @@
 import "./globals.css";
 import Header from "./components/Header";
+import HeroSec from "./components/HeroSec";
 
 
 export const metadata = {
@@ -12,6 +13,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className="">
         <Header />
+        
         {children}
       </body>
     </html>
