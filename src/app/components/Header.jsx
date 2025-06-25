@@ -19,7 +19,7 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 bg-white shadow-md">
-      <div className="max-w-7xl mx-auto flex items-center justify-between  px-4 py-2 md:py-3">
+      <div className="w-full lg:max-w-7xl lg:mx-auto lg:px-4 flex items-center justify-between py-2 md:py-3">
         {/* Logo */}
         <Link href="/" className="flex items-start gap-2 select-none ">
           <Image
@@ -31,10 +31,10 @@ export default function Header() {
             priority
           />
         </Link>
-         <div className="md:flex items-center justify-end ml-6">
+         <div className="md:flex items-center justify-center ml-6">
 
         {/* Desktop Nav Items links */}
-        <div className="hidden md:flex justify-end  ml-6">
+        <div className="hidden md:flex flex-1 justify-center ml-6">
           <nav className="flex gap-4 text-sm font-medium text-[#161821]">
             {navLinks.map((link) => (
               <Link
@@ -48,37 +48,45 @@ export default function Header() {
           </nav>
         </div>
        
-        {/* Donate Button */}
+        {/* Donate Button (Desktop) */}
+        <Link
+          href="/donate"
+          className="ml-8 px-5 py-2 rounded-full bg-[#FF8B71] text-white font-semibold shadow hover:bg-[#FD7064] transition-colors duration-200 text-base hidden md:inline-block"
+        >
+          Donate Now
+        </Link>
+        </div>
+
+        {/* Hamburger (Mobile) */}
+        <div className="flex items-center gap-2 md:hidden">
           <Link
             href="/donate"
-            className="ml-8 px-5 py-2   rounded-full bg-[#FF8B71] text-white font-semibold shadow hover:bg-[#FD7064] transition-colors duration-200 text-base"
+            className="ml-2 px-5 py-2 rounded-full bg-[#FF8B71] text-white font-semibold shadow hover:bg-[#FD7064] transition-colors duration-200 text-base"
           >
             Donate Now
           </Link>
-          </div>
-
-        {/* Hamburger (Mobile) */}
-        <button
-          className="md:hidden flex flex-col justify-center items-center w-10 h-10 relative z-50"
-          aria-label="Toggle menu"
-          onClick={() => setMenuOpen((open) => !open)}
-        >
-          <span
-            className={`block h-0.5 w-6 main-bg rounded transition-all duration-300 ${
-              menuOpen ? "rotate-45 translate-y-2" : ""
-            }`}
-          ></span>
-          <span
-            className={`block h-0.5 w-6 main-bg rounded my-1 transition-all duration-300 ${
-              menuOpen ? "opacity-0" : ""
-            }`}
-          ></span>
-          <span
-            className={`block h-0.5 w-6 main-bg rounded transition-all duration-300 ${
-              menuOpen ? "-rotate-45 -translate-y-2" : ""
-            }`}
-          ></span>
-        </button>
+          <button
+            className="flex flex-col justify-center items-center w-10 h-10 relative z-50"
+            aria-label="Toggle menu"
+            onClick={() => setMenuOpen((open) => !open)}
+          >
+            <span
+              className={`block h-0.5 w-6 main-bg rounded transition-all duration-300 ${
+                menuOpen ? "rotate-45 translate-y-2" : ""
+              }`}
+            ></span>
+            <span
+              className={`block h-0.5 w-6 main-bg rounded my-1 transition-all duration-300 ${
+                menuOpen ? "opacity-0" : ""
+              }`}
+            ></span>
+            <span
+              className={`block h-0.5 w-6 main-bg rounded transition-all duration-300 ${
+                menuOpen ? "-rotate-45 -translate-y-2" : ""
+              }`}
+            ></span>
+          </button>
+        </div>
 
         {/* Mobile Menu */}
         <div
