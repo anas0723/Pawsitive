@@ -17,12 +17,12 @@ const HeroSec = () => {
         <div className="absolute z-20 top-4 left-1/2 -translate-x-1/2 sm:top-[44px] sm:left-[44px] sm:-translate-x-0 w-[95vw] max-w-[98vw] xs:max-w-[90vw] sm:max-w-xl p-2 xs:p-4 sm:p-8 flex flex-col items-center sm:items-start">
           <h1 className="text-lg xs:text-xl sm:text-3xl md:text-4xl lg:text-5xl text-white font-bold leading-tight text-center sm:text-left break-words">
             Empowering <br className="hidden xs:block" />
-            Shelters
+            Shelter
             <span className="text-[#EE5D56] block">
-              Transforming Lives.
+              Transforming Lives?
             </span>
           </h1>
-          <p className="text-white text-xs xs:text-sm sm:text-base md:text-lg lg:text-xl mt-2 xs:mt-3 sm:mt-4 text-center sm:text-left max-w-full xs:max-w-[90vw] sm:max-w-md">
+          <p className="text-[#fff] text-xs xs:text-sm sm:text-base md:text-lg lg:text-xl mt-2 xs:mt-3 sm:mt-4 text-right sm:text-left max-w-full xs:max-w-[90vw] sm:max-w-md">
             Pawsitive Change delivers essential tools to shelters across the country—protecting pets from illness and giving them a real chance at a healthy, happy future.
           </p>
           <div className="flex gap-[10px] mt-3 xs:mt-5 sm:mt-6 flex-row w-full sm:w-auto items-center sm:items-start">

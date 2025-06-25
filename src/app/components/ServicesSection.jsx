@@ -1,4 +1,6 @@
 import React from "react";
+import Image from "next/image";
+import Link from "next/link";
 
 const stats = [
 	{
@@ -20,25 +22,13 @@ const services = [
 		iconBg: "bg-[#FFE6E6]",
 		icon: (
 			<span className="bg-[#FF5D5D] text-white rounded-lg p-2 text-xl">
-				<svg
-					width="24"
-					height="24"
-					fill="none"
-					viewBox="0 0 24 24"
-				>
-					<rect
-						width="24"
-						height="24"
-						rx="6"
-						fill="currentColor"
-					/>
-					<path
-						d="M8 12h8M12 8v8"
-						stroke="#fff"
-						strokeWidth="2"
-						strokeLinecap="round"
-					/>
-				</svg>
+				<Image
+					src="/icon/icon-1.png"
+					width={24}
+					height={24}
+					alt="Critical Supplies Icon"
+					className="h-6 w-6"
+				/>
 			</span>
 		),
 		title: "Critical Supplies",
@@ -49,25 +39,13 @@ const services = [
 		iconBg: "bg-[#FFF8E1]",
 		icon: (
 			<span className="bg-[#FFD600] text-white rounded-lg p-2 text-xl">
-				<svg
-					width="24"
-					height="24"
-					fill="none"
-					viewBox="0 0 24 24"
-				>
-					<rect
-						width="24"
-						height="24"
-						rx="6"
-						fill="currentColor"
-					/>
-					<path
-						d="M12 8v4l3 3"
-						stroke="#fff"
-						strokeWidth="2"
-						strokeLinecap="round"
-					/>
-				</svg>
+				<Image
+					src="/icon/icon-2.png"
+					width={24}
+					height={24}
+					alt="Biosecurity Kits Icon"
+					className="w-6 h-6"
+				/>
 			</span>
 		),
 		title: "Biosecurity Kits",
@@ -78,18 +56,16 @@ const services = [
 
 const ServicesSection = () => {
 	return (
-		<section className="w-full lg:max-w-7xl lg:mx-auto lg:px-4 py-10">
+		<section className="w-full max-w-[1493px] mx-auto px-[100px] py-10">
 			{/* Stats */}
 			<div className="flex flex-col sm:flex-row justify-center items-center gap-4 mb-8">
 				{stats.map((stat, i) => (
 					<div
 						key={i}
-						className="bg-white rounded-xl shadow p-6 flex flex-col items-center min-w-[180px]"
+						className="bg-[#FFEBEC8A] rounded-xl shadow p-6 flex flex-col items-center min-w-[180px]"
 					>
 						<span className="text-2xl font-bold">{stat.value}</span>
-						<span className="text-gray-500 text-sm mt-1">
-							{stat.label}
-						</span>
+						<span className="text-gray-500 text-sm mt-1">{stat.label}</span>
 					</div>
 				))}
 			</div>
@@ -107,9 +83,9 @@ const ServicesSection = () => {
 					Comprehensive
 					<br className="hidden sm:block" /> Support For Animal Shelters
 				</h2>
-				<p className="text-gray-500 text-base md:text-right max-w-md md:max-w-lg">
-					We provide biosecurity solutions that transform animal shelters
-					and rescues nationwide
+				<p className="text-[#333333] text-base md:text-right max-w-md md:max-w-lg">
+					We provide biosecurity solutions that transform animal shelters and
+					rescues nationwide
 				</p>
 			</div>
 			{/* Service Cards */}
@@ -132,19 +108,79 @@ const ServicesSection = () => {
 								{service.title}
 							</span>
 						</div>
-						<p className="text-gray-600 text-base font-medium">
+						<p className="text-[#333333] text-base font-medium">
 							{service.desc}
 						</p>
-						Decorative corner
+						{/* Decorative pink curve for Critical Supplies card only */}
+						{service.title === "Critical Supplies" && (
+							<span
+								className="absolute top-0 right-0 pointer-events-none bg-[#FFDBDFBF] rounded-bl-[161px] rounded-tr-[32px]"
+								style={{ width: "93px", height: "100.15px" }}
+							></span>
+						)}
+						{/* Decorative yellow curve for Biosecurity Kits card only */}
+						{service.title === "Biosecurity Kits" && (
+							<span
+								className="absolute top-0 right-0 pointer-events-none bg-[#FFE8A3] rounded-bl-[161px] rounded-tr-[32px]"
+								style={{ width: "93px", height: "100.15px" }}
+							></span>
+						)}
+						{/* Existing white overlay for all cards */}
 						<span
 							className="absolute top-0 right-0 w-20 h-20 bg-white/30 rounded-bl-full pointer-events-none"
-							style={{
-								borderTopRightRadius: "1rem",
-							}}
+							style={{ borderTopRightRadius: "1rem" }}
 						></span>
 					</div>
 				))}
 			</div>
+			{/* Pawsitive Program Section at the end */}
+			<section className="w-full max-w-7xl mx-auto px-4 py-10 flex flex-col md:flex-row items-center gap-10 bg-white mt-10 md:mt-16">
+				{/* Left: Image with circle bg */}
+				<div className="relative flex-shrink-0 flex items-center justify-center w-full md:w-1/2 mb-8 md:mb-0">
+					<div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-60 h-60 sm:w-80 sm:h-80 bg-[#EAF7FF] rounded-full z-0"></div>
+					<Image
+						src="/images/aunt-with-dog.png"
+						alt="Woman with dog"
+						width={320}
+						height={320}
+						className="relative z-10 object-contain drop-shadow-xl w-60 h-60 sm:w-80 sm:h-80"
+						priority
+					/>
+					{/* Decorative paw prints */}
+					<div className="absolute bottom-4 right-4 opacity-20 z-0 hidden sm:block">
+						<Image
+							src="/images/paw-print.svg"
+							alt="Paw Print"
+							width={40}
+							height={40}
+						/>
+					</div>
+				</div>
+				{/* Right: Content */}
+				<div className="flex-1 flex flex-col items-start justify-center gap-6 w-full">
+					<h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-gray-900 mb-2">
+						A Pawsitive Program
+					</h2>
+					<div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full mb-4">
+						<div className="bg-white rounded-xl shadow p-4 text-gray-700 text-base font-medium">
+							Pawsitive Change drives a movement of urgency around animal
+							welfare.
+						</div>
+						<div className="bg-white rounded-xl shadow p-4 text-gray-700 text-base font-medium">
+							Supports all deserving animal care facilities.
+						</div>
+						<div className="bg-white rounded-xl shadow p-4 text-gray-700 text-base font-medium">
+							Donates critical supplies to empower these facilities.
+						</div>
+						<div className="bg-white rounded-xl shadow p-4 text-gray-700 text-base font-medium">
+							Helps create healthier, safer, and more efficient environments.
+						</div>
+					</div>
+					<button className="px-7 py-2 rounded-full bg-[#FF8B71] text-white font-semibold shadow hover:bg-[#FD7064] transition-colors duration-200 text-base">
+						Learn more
+					</button>
+				</div>
+			</section>
 		</section>
 	);
 };
