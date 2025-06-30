@@ -12,10 +12,9 @@ import Footer from "./components/common/Footer";
 const HomePage = () => {
   return (
     <>
-      <Header />
       <HeroSec />
       <ServicesSection />
-      <HeroSectionCard />
+      <HeroSectionCard /> 
       <SalePart />
       <ProductCards />
       <FrequentlyAskedQuestions />
