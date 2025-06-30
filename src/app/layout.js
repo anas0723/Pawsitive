@@ -1,6 +1,6 @@
 import "./globals.css";
-import Header from "./components/Header";
-import HeroSectionCard from "./components/HeroSectionCard";
+import Header from "./components/common/Header";
+import HeroSectionCard from "./components/home/HeroSectionCard";
 
 export const metadata = {
   title: "Pawsative ",

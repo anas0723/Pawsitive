@@ -8,7 +8,7 @@ const Footer = () => {
         {/* Left: Logo and description */}
         <div className="flex flex-col items-center md:items-start flex-1 min-w-[180px] w-full md:w-auto mb-6 md:mb-0">
           <Image
-            src={require('../../../public/images/PawsitiveChangeLogo 1.png')}
+            src="/images/PawsitiveChangeLogo 1.png"
             alt="Pawsitive Change Logo"
             width={90}
             height={60}
@@ -36,7 +36,7 @@ const Footer = () => {
           </div>
         </div>
         {/* Right: Links */}
-        <div className="flex flex-col sm:flex-row flex-1 gap-8 justify-end min-w-[180px] w-full md:w-auto items-center md:items-start">
+        <div className="flex flex-col sm:flex-row flex-1 gap-44 justify-end min-w-[180px] w-full md:w-auto items-center md:items-start">
           <div className="mb-4 sm:mb-0">
             <h4 className="font-bold mb-2 text-black text-center sm:text-left">Quick Links</h4>
             <ul className="space-y-1 text-sm text-center sm:text-left">

@@ -9,14 +9,14 @@ const CatForm = () => {
       {/* Cat main image with paw print overlay - hidden on small screens */}
       <div className="relative min-w-[340px] h-[420px] items-end z-20 hidden md:flex">
         <Image
-          src={require('../../../public/images/End-main-cat.png')}
+          src="/images/End-main-cat.png"
           alt="cat"
           width={260}
           height={340}
           className="object-contain absolute left-0 bottom-0 z-20"
         />
         <Image
-          src={require('../../../public/images/fott-print-with-cat.png')}
+          src="/images/fott-print-with-cat.png"
           alt="paw print"
           width={260}
           height={340}
@@ -74,7 +74,7 @@ const CatForm = () => {
           </form>
           {/* Paw print bg under form */}
           <Image
-            src={require('../../../public/images/fott-print-with-from.png')}
+            src="/images/fott-print-with-from.png"
             alt="paw print bg"
             width={420}
             height={120}

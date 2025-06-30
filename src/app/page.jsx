@@ -1,12 +1,12 @@
 import React from "react";
-import HeroSec from "./components/HeroSec";
-import ServicesSection from "./components/ServicesSection";
-import HeroSectionCard from "./components/HeroSectionCard";
-import SalePart from "./components/SalePart";
-import ProductCards from "./components/ProductCards";
-import FrequentlyAskedQuestions from "./components/FrequentlyAskedQuestions";
-import CatForm from "./components/CatForm";
-import Footer from "./components/Footer";
+import HeroSec from "./components/home/HeroSec";
+import ServicesSection from "./components/home/ServicesSection";
+import HeroSectionCard from "./components/home/HeroSectionCard";
+import SalePart from "./components/home/SalePart";
+import ProductCards from "./components/home/ProductCards";
+import FrequentlyAskedQuestions from "./components/home/FrequentlyAskedQuestions";
+import CatForm from "./components/home/CatForm";
+import Footer from "./components/common/Footer";
 const page = () => {
   return (
     <>
