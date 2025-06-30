@@ -6,7 +6,7 @@ import SalePart from "./components/SalePart";
 import ProductCards from "./components/ProductCards";
 import FrequentlyAskedQuestions from "./components/FrequentlyAskedQuestions";
 import CatForm from "./components/CatForm";
-
+import Footer from "./components/Footer";
 const page = () => {
   return (
     <>
@@ -17,8 +17,11 @@ const page = () => {
       <ProductCards />
       <FrequentlyAskedQuestions />
       <CatForm />
+      <Footer />
+
     </>
   );
 };
 
 export default page;
+  
