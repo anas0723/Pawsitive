@@ -1,5 +1,6 @@
 import Header from "../components/common/Header";
 import Image from "next/image";
+import Footer from "../components/common/Footer";
 
 export default function AboutPage() {
   return (
@@ -23,6 +24,7 @@ export default function AboutPage() {
         </div>
         {/* Add more about content here as needed */}
       </section>
+      <Footer />
     </>
   );
 }
