@@ -52,7 +52,7 @@ export default function Header() {
           </div>
           {/* Donate Button (Desktop) */}
           <Link
-            href="/donate"
+            href="/donate-now"
             className="ml-8 px-5 py-2 rounded-full bg-[#FF8B71] text-white font-semibold shadow hover:bg-[#FD7064] transition-colors duration-200 text-base hidden md:inline-block"
           >
             Donate Now
