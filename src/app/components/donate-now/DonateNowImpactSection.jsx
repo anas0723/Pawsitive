@@ -6,7 +6,7 @@ export default function DonateNowImpactSection() {
       <div className="flex-1 flex justify-center items-center">
         <div className="rounded-[40%] overflow-hidden border-4 border-[#AEE9F7] w-[220px] h-[220px] md:w-[260px] md:h-[260px] flex items-center justify-center bg-white">
           <Image
-            src="/images/dog-left-end-section.png"
+            src="/images/dog-left-end-section.jpg"
             alt="Dog resting"
             width={260}
             height={260}
