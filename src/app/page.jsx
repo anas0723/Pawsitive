@@ -1,4 +1,5 @@
 import React from "react";
+import Header from "./components/common/Header";
 import HeroSec from "./components/home/HeroSec";
 import ServicesSection from "./components/home/ServicesSection";
 import HeroSectionCard from "./components/home/HeroSectionCard";
@@ -7,9 +8,11 @@ import ProductCards from "./components/home/ProductCards";
 import FrequentlyAskedQuestions from "./components/home/FrequentlyAskedQuestions";
 import CatForm from "./components/home/CatForm";
 import Footer from "./components/common/Footer";
-const page = () => {
+
+const HomePage = () => {
   return (
     <>
+    
       <HeroSec />
       <ServicesSection />
       <HeroSectionCard />
@@ -18,10 +21,8 @@ const page = () => {
       <FrequentlyAskedQuestions />
       <CatForm />
       <Footer />
-
     </>
   );
 };
 
-export default page;
-  
+export default HomePage;

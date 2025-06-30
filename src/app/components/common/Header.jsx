@@ -2,20 +2,22 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-
-
+import { usePathname } from "next/navigation";
+import { useRouter } from "next/router";
 const navLinks = [
   { name: "Home", href: "/" },
-  { name: "About Us", href: "/aboutus" },
-  { name: "Get Involved", href: "/getinvolved" },
-  { name: "Shelters & Rescues", href: "/shelters&rescues" },
+  { name: "About Us", href: "/about-us" },
+  { name: "Get Involved", href: "/get-involved" },
+  { name: "Shelters & Rescues", href: "/shelters-&-rescues" },
   { name: "Blogs", href: "/blogs" },
   { name: "Shop", href: "/shop" },
-  { name: "Contact Us", href: "/contactus" },
+  { name: "Contact Us", href: "/contact-us" },
 ];
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const pathname = usePathname();
+  // const router = useRouter();
 
   return (
     <>
@@ -39,7 +41,9 @@ export default function Header() {
                 <Link
                   key={link.name}
                   href={link.href}
-                  className="text-gray-700 hover:text-[#FF8B71] font-medium transition-colors duration-200"
+                  className={`font-medium transition-colors duration-200 ${
+                    pathname === link.href ? "text-[#FD7064]" : "text-gray-600"
+                  } hover:text-[#FF8B71]`}
                 >
                   {link.name}
                 </Link>
@@ -95,13 +99,14 @@ export default function Header() {
               <Link
                 key={link.name}
                 href={link.href}
-                className="text-gray-700 text-lg font-semibold hover:text-[#FD7064] transition-colors duration-200"
+                className={`text-gray-700 text-lg font-semibold hover:text-[#FD7064] transition-colors duration-200 ${
+                  pathname === link.href ? "text-[#FD7064]" : ""
+                }`}
                 onClick={() => setMenuOpen(false)}
               >
                 {link.name}
               </Link>
             ))}
-        
           </div>
 
           {/* Overlay when menu is open */}
@@ -113,7 +118,6 @@ export default function Header() {
           )}
         </div>
       </header>
-      
     </>
   );
 }
