@@ -61,7 +61,7 @@ export default function Header() {
           {/* Hamburger (Mobile) */}
           <div className="flex items-center gap-2 md:hidden">
             <Link
-              href="/donate"
+              href="/donate-now"
               className="ml-2 px-5 py-2 rounded-full bg-[#FF8B71] text-white font-semibold shadow hover:bg-[#FD7064] transition-colors duration-200 text-base"
             >
               Donate Now

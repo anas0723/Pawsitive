@@ -14,12 +14,7 @@ export default function ContactPage() {
             className="object-cover"
             priority
           />
-          <div className="absolute left-0 top-0 w-full h-full flex items-center px-8">
-            <h1 className="font-poppins font-bold text-3xl md:text-4xl text-white drop-shadow-lg">
-              Contact Us
-              <span className="block w-32 h-1 bg-[#FF8B71] mt-2 rounded"></span>
-            </h1>
-          </div>
+      
         </div>
       </div>
       {/* Main Content */}
