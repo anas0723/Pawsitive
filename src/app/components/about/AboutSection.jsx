@@ -5,7 +5,10 @@ export default function AboutSection({ title, text, image, imageBorderColor, ima
     <section className={`flex flex-col md:flex-row ${imageRight ? 'md:flex-row-reverse' : ''} items-center gap-8 mb-12`}>
       {/* Image */}
       <div className="flex-shrink-0">
-        <div className={`w-[220px] h-[220px] md:w-[260px] md:h-[260px] rounded-[50%_45%_50%_55%/55%_50%_45%_50%]`} style={{ background: imageBorderColor, border: `4px solid ${imageBorderColor}` }}>
+        <div
+          className={`w-[220px] h-[220px] md:w-[260px] md:h-[260px] rounded-[50%_45%_50%_55%/55%_50%_45%_50%] border-4`}
+          style={{ background: imageBorderColor, borderColor: imageBorderColor }}
+        >
           <Image
             src={image}
             alt={title}

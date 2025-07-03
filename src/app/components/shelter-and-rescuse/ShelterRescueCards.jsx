@@ -21,7 +21,12 @@ export default function ShelterRescueCards() {
       {cards.map((card, idx) => (
         <div key={idx} className="bg-white rounded-2xl shadow p-6 flex flex-col items-center max-w-sm w-full">
           <div className="mb-4">
-            <div className="w-[120px] h-[120px] md:w-[140px] md:h-[140px] rounded-[50%_45%_50%_55%/55%_50%_45%_50%] flex items-center justify-center overflow-hidden" style={{ background: card.border, border: `4px solid ${card.border}` }}>
+            <div
+              className={
+                `w-[120px] h-[120px] md:w-[140px] md:h-[140px] rounded-[50%_45%_50%_55%/55%_50%_45%_50%] flex items-center justify-center overflow-hidden border-4`
+              }
+              style={{ background: card.border, borderColor: card.border }}
+            >
               <Image src={card.image} alt={card.title} width={140} height={140} className="object-cover w-full h-full" priority />
             </div>
           </div>

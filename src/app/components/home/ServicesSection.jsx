@@ -114,21 +114,18 @@ const ServicesSection = () => {
 						{/* Decorative pink curve for Critical Supplies card only */}
 						{service.title === "Critical Supplies" && (
 							<span
-								className="absolute top-0 right-0 pointer-events-none bg-[#FFDBDFBF] rounded-bl-[161px] rounded-tr-[32px]"
-								style={{ width: "93px", height: "100.15px" }}
+								className="absolute top-0 right-0 pointer-events-none bg-[#FFDBDFBF] rounded-bl-[161px] rounded-tr-[32px] w-[93px] h-[100.15px]"
 							></span>
 						)}
 						{/* Decorative yellow curve for Biosecurity Kits card only */}
 						{service.title === "Biosecurity Kits" && (
 							<span
-								className="absolute top-0 right-0 pointer-events-none bg-[#FFE8A3] rounded-bl-[161px] rounded-tr-[32px]"
-								style={{ width: "93px", height: "100.15px" }}
+								className="absolute top-0 right-0 pointer-events-none bg-[#FFE8A3] rounded-bl-[161px] rounded-tr-[32px] w-[93px] h-[100.15px]"
 							></span>
 						)}
 						{/* Existing white overlay for all cards */}
 						<span
-							className="absolute top-0 right-0 w-20 h-20 bg-white/30 rounded-bl-full pointer-events-none"
-							style={{ borderTopRightRadius: "1rem" }}
+							className="absolute top-0 right-0 w-20 h-20 bg-white/30 rounded-bl-full pointer-events-none rounded-tr-[1rem]"
 						></span>
 					</div>
 				))}

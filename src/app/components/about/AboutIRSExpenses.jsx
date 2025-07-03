@@ -34,7 +34,7 @@ export default function AboutIRSExpenses() {
             <div className="w-[200px] h-[200px] md:w-[240px] md:h-[240px] rounded-full overflow-hidden bg-white flex items-center justify-center">
               <Image src="/images/about-us/dog-food.png" alt="Dog Food" width={240} height={240} className="object-cover w-full h-full" priority />
             </div>
-            <div className="absolute -top-6 -left-6 w-24 h-24 opacity-10 z-0" style={{background: 'url(/images/paw-print.svg) center/cover no-repeat'}}></div>
+            <div className="absolute -top-6 -left-6 w-24 h-24 opacity-10 z-0 bg-[url('/images/paw-print.svg')] bg-center bg-cover bg-no-repeat"></div>
           </div>
           {/* Right: Card - absolutely positioned on md+ */}
           <div className="w-full md:w-auto md:absolute md:left-[calc(240px+115px)] md:top-1/2 md:-translate-y-1/2 z-20">

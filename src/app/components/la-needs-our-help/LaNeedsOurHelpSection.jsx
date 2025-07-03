@@ -5,7 +5,7 @@ export default function LaNeedsOurHelpSection({ title, text, image, imageAlt, im
     <section className={`grid md:grid-cols-2 gap-8 items-center mb-12`}>
       {imageOnLeft && (
         <div className="flex justify-center order-2 md:order-1">
-          <div className={`rounded-full overflow-hidden border-4`} style={{ borderColor: imageBorderColor, width: '14rem', height: '14rem', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+          <div className={`rounded-full overflow-hidden border-4 w-[14rem] h-[14rem] flex items-center justify-center`} style={{ borderColor: imageBorderColor }}>
             <Image
               src={image}
               alt={imageAlt}
@@ -22,7 +22,7 @@ export default function LaNeedsOurHelpSection({ title, text, image, imageAlt, im
       </div>
       {!imageOnLeft && (
         <div className="flex justify-center">
-          <div className={`rounded-full overflow-hidden border-4`} style={{ borderColor: imageBorderColor, width: '14rem', height: '14rem', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+          <div className={`rounded-full overflow-hidden border-4 w-[14rem] h-[14rem] flex items-center justify-center`} style={{ borderColor: imageBorderColor }}>
             <Image
               src={image}
               alt={imageAlt}

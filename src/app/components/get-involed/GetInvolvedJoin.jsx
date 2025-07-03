@@ -22,8 +22,7 @@ export default function GetInvolvedJoin() {
             src="/images/get-involved/Dog-center-aunt.png"
             alt="Dog and Aunt"
             fill
-            className="object-cover object-center w-full h-full"
-            style={{ borderTopRightRadius: '1rem', borderBottomRightRadius: '1rem' }}
+            className="object-cover object-center w-full h-full rounded-tr-[1rem] rounded-br-[1rem]"
             priority
           />
         </div>

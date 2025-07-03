@@ -11,7 +11,7 @@ const navLinks = [
   { name: "Shelters & Rescues", href: "/shelter-and-rescuse" },
   { name: "Blogs", href: "/blogs" },
   { name: "Shop", href: "/shop" },
-  { name: "Contact Us", href: "/contact-us" },
+  { name: "Contact", href: "/contact" },
 ];
 
 export default function Header() {
