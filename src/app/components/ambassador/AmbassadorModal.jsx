@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const AmbassadorModal = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-40">
+    <div className="fixed inset-0 z-50 flex items-center justify-center backdrop-blur-sm bg-black/10">
       <div className="bg-white rounded-2xl shadow-lg w-full max-w-lg p-6 relative overflow-y-auto max-h-[90vh]">
         <button
           className="absolute top-4 right-4 text-2xl text-gray-400 hover:text-gray-700"
@@ -15,37 +15,37 @@ const AmbassadorModal = ({ isOpen, onClose }) => {
         <h2 className="text-center font-bold text-red-400 text-2xl mb-6">APPLY HERE</h2>
         <form className="space-y-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <input type="text" placeholder="First name" className="input border leading-7 rounded-2xl border-[#A3A3A3] pl-4" required />
-            <input type="text" placeholder="Last name" className="input" required />
+            <input type="text" placeholder="First name" className="input border leading-10  rounded-2xl border-[#A3A3A3] pl-4" required />
+            <input type="text" placeholder="Last name" className="input border leading-10 rounded-2xl border-[#A3A3A3] pl-4" required />
           </div>
-          <input type="email" placeholder="Email" className="input w-full" required />
-          <input type="text" placeholder="Phone no." className="input w-full" required />
-          <select className="input w-full" required>
+          <input type="email" placeholder="Email" className="input w-full input border leading-10 rounded-2xl border-[#A3A3A3] pl-4" required />
+          <input type="text" placeholder="Phone no." className="input w-full input border leading-10 rounded-2xl border-[#A3A3A3] pl-4" required />
+          <select className="input w-full input border leading-10 rounded-2xl border-[#A3A3A3] pl-4" required>
             <option value="">Country</option>
             <option value="US">United States</option>
             <option value="CA">Canada</option>
             {/* Add more countries as needed */}
           </select>
-          <input type="text" placeholder="Address line 1" className="input w-full" required />
+          <input type="text" placeholder="Address line 1" className="input w-full input border leading-10 rounded-2xl border-[#A3A3A3] pl-4" required />
           <input type="text" placeholder="Address line 2" className="input w-full" />
           <div className="grid grid-cols-3 gap-4">
-            <input type="text" placeholder="City" className="input" required />
-            <input type="text" placeholder="State" className="input" required />
-            <input type="text" placeholder="Zip code" className="input" required />
+            <input type="text" placeholder="City" className="input border leading-10 rounded-2xl border-[#A3A3A3] pl-4" required />
+            <input type="text" placeholder="State" className="input border leading-10 rounded-2xl border-[#A3A3A3] pl-4" required />
+            <input type="text" placeholder="Zip code" className="input border leading-10 rounded-2xl border-[#A3A3A3] pl-4" required />
           </div>
           <input type="text" placeholder="Social media handle (*separated by commas)" className="input w-full" />
-          <select className="input w-full" required>
+          <select className="input w-full input border leading-10 rounded-2xl border-[#A3A3A3] pl-4" required>
             <option value="">Do you have a heart for animals?</option>
             <option value="yes">Yes</option>
             <option value="no">No</option>
           </select>
-          <select className="input w-full" required>
+          <select className="input w-full input border leading-10 rounded-2xl border-[#A3A3A3] pl-4" required>
             <option value="">Why do you want to be a Pawsitive Change Ambassador?</option>
             <option value="help">To help animals</option>
             <option value="community">To support my community</option>
             {/* Add more options as needed */}
           </select>
-          <select className="input w-full" required>
+          <select className="input w-full input border leading-10 rounded-2xl border-[#A3A3A3] pl-4" required>
             <option value="">Do you have experience giving love to animals?</option>
             <option value="yes">Yes</option>
             <option value="no">No</option>
@@ -61,7 +61,7 @@ const AmbassadorModal = ({ isOpen, onClose }) => {
             </div>
           </div>
           <textarea placeholder="If other, we would love to learn about other ways we can keep spreading the Pawsitive Change" className="input w-full min-h-[60px]" />
-          <select className="input w-full" required>
+          <select className="input w-full input border leading-10 rounded-2xl border-[#A3A3A3] pl-4" required>
             <option value="">Do you currently have pets?</option>
             <option value="yes">Yes</option>
             <option value="no">No</option>
@@ -74,7 +74,7 @@ const AmbassadorModal = ({ isOpen, onClose }) => {
               <label className="radio-label"><input type="radio" name="comm" /> Text</label>
             </div>
           </div>
-          <select className="input w-full" required>
+          <select className="input w-full input border leading-10 rounded-2xl border-[#A3A3A3] pl-4" required>
             <option value="">T-shirt size</option>
             <option value="xs">XS</option>
             <option value="s">S</option>

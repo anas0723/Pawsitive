@@ -1,5 +1,8 @@
+"use client";
 import { FaVideo, FaShieldAlt, FaHeadset } from 'react-icons/fa';
 import Image from 'next/image';
+import { useState } from 'react';
+import KitOrderModal from '../kit/KitOrderModal';
 
 const cards = [
   {
@@ -20,6 +23,7 @@ const cards = [
 ];
 
 export default function ShelterReceive() {
+  const [modalOpen, setModalOpen] = useState(false);
   return (
     <section className="w-full py-12">
       {/* What You'll Receive Cards */}
@@ -41,7 +45,8 @@ export default function ShelterReceive() {
         <div className="flex-1 flex flex-col justify-center py-10 px-6 md:px-12">
           <h3 className="font-poppins font-bold text-2xl md:text-3xl text-[#222] mb-3">For Shelters and Rescues, And All Animal Care Facilities</h3>
           <p className="font-poppins text-[15px] md:text-[16px] text-[#444] mb-5 max-w-md">To help improve the health and safety of your environment, we’re offering a CleanAir Kit (valued at $400) delivered at no cost to your organization. It’s like a biosecurity training you need to simplify cage sanitation while reducing stress and risk for animals and staff or protocol.</p>
-          <button className="font-poppins w-fit px-6 py-2 rounded-full bg-[#FF8B71] text-white font-semibold shadow hover:bg-[#ff6a3d] transition-colors duration-200 text-base">Order your kit now</button>
+          <button onClick={() => setModalOpen(true)} className="font-poppins w-fit px-6 py-2 rounded-full bg-[#FF8B71] text-white font-semibold shadow hover:bg-[#ff6a3d] transition-colors duration-200 text-base">Order your kit now</button>
+          <KitOrderModal isOpen={modalOpen} onClose={() => setModalOpen(false)} />
         </div>
         {/* Right: Image */}
         <div className="flex-1 min-h-[260px] relative w-full h-[260px] md:h-[340px]">
