@@ -1,36 +1,112 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🐾 Pawsitive Change
 
-## Getting Started
+Empowering Shelters, Transforming Lives
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
+## 🌟 Overview
+Pawsitive Change is a modern, visually engaging web platform built with Next.js and React, dedicated to improving the lives of animals by supporting shelters, rescues, and communities. The platform empowers users to donate, get involved, shop for partner products, and access educational resources—all with a focus on transparency, scientific impact, and community action.
+
+---
+
+## 🚀 Features
+
+- **Home Page:**
+  - Inspiring hero section and mission highlights
+  - Service stats (animals helped, shelters supported, supplies delivered)
+  - Feature cards for Ambassador Program, Shelter Kits, and Rapid Relief
+  - FAQ and contact form
+
+- **About Us:**
+  - Organization’s mission, vision, and commitment
+  - Transparency about 501(c)(3) status and donation usage
+  - IRS-eligible expenses and partner testimonials
+
+- **Get Involved:**
+  - Direct donation and workplace giving options
+  - Ambassador Program: Become an animal welfare ambassador and receive a Pawsitive Change credit card for pet-related purchases
+  - Step-by-step application and onboarding process
+
+- **Shelters & Rescues:**
+  - Information on free biosecurity kits (disinfectants, air cleaning cards, etc.)
+  - Application form for shelters to request support
+  - Ongoing training and support resources
+
+- **Donate Now:**
+  - One-time and monthly donation options
+  - Impact section showing how donations help
+  - Secure, user-friendly donation form
+
+- **Shop:**
+  - Curated partner products for animal care
+  - Easy-to-use product grid and purchase options
+
+- **Blog:**
+  - Educational articles and stories from the animal welfare community
+  - Highlights on disaster response, shelter success stories, and more
+
+- **Special Initiatives:**
+  - LA Needs Our Help: Focused content on disaster relief and community support
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** Next.js 15, React 19, Tailwind CSS 4, React Icons
+- **Styling:** Tailwind CSS, custom global styles
+- **Forms:** Custom React forms for donations, ambassador applications, and kit requests
+- **Assets:** Rich imagery and icons for a modern, friendly UI
+
+---
+
+## 💻 Getting Started
+
+1. **Install dependencies:**
+   ```bash
+   npm install
+   # or
+yarn install
+   ```
+
+2. **Start the development server:**
+   ```bash
+   npm run dev
+   # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+   ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. **Open your browser:**
+   Visit [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🤝 Contributing
 
-## Learn More
+We welcome contributions! Please fork the repository, create a new branch, and submit a pull request. For major changes, open an issue first to discuss your ideas.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📄 License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This project is for educational and non-profit use. For commercial use or questions, please contact the maintainers.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📬 Contact & Social
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Website:** [Pawsitive Change](#)
+- **Instagram:** [@pawsitivechange](#)
+- **Facebook:** [Pawsitive Change](#)
+- **Email:** [Contact Us](#)
+
+---
+
+## 🙏 Acknowledgements
+
+- Built with [Next.js](https://nextjs.org/)
+- Inspired by the dedication of animal lovers, volunteers, and shelter staff everywhere.
+
+---
+
+**Ready for a Pawsitive Change?**  
+Join us, donate, or get involved today—every action makes a difference!
