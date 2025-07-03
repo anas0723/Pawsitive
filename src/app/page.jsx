@@ -6,7 +6,6 @@ import HeroSectionCard from "./components/home/HeroSectionCard";
 import SalePart from "./components/home/SalePart";
 import ProductCards from "./components/home/ProductCards";
 import FrequentlyAskedQuestions from "./components/home/FrequentlyAskedQuestions";
-import CatForm from "./components/common/CatForm";
 
 const HomePage = () => {
   return (
@@ -17,7 +16,6 @@ const HomePage = () => {
       <SalePart />
       <ProductCards />
       <FrequentlyAskedQuestions />
-      <CatForm />
     </>
   );
 };
