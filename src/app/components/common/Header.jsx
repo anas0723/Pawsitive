@@ -8,7 +8,7 @@ const navLinks = [
   { name: "Home", href: "/" },
   { name: "About Us", href: "/about-us" },
   { name: "Get Involved", href: "/get-involed" },
-  { name: "Shelters & Rescues", href: "/shelter-and-rescues" },
+  { name: "Shelters & Rescues", href: "/shelter-and-rescuse" },
   { name: "Blogs", href: "/blogs" },
   { name: "Shop", href: "/shop" },
   { name: "Contact Us", href: "/contact-us" },

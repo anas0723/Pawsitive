@@ -1,16 +1,17 @@
-import ShelterHero from './ShelterHero'
-import ShelterRescueCards from './ShelterRescueCards'
-import ShelterKit from './ShelterKit'
+import ShelterHero from './ShelterHero';
+import ShelterReceive from './ShelterReceive';
+import ShelterRescueCards from './ShelterRescueCards';
+import ShelterKit from './ShelterKit';
 
-const ShelterAndRescuePage = () => {
+export default function ShelterRescuePage() {
   return (
-    <>
-    <ShelterHero />
-    <ShelterRescueCards />
-    <ShelterKit />
-    </>
-  )
+    <main className="bg-white min-h-screen py-6 px-2 sm:px-4">
+      <div className="max-w-7xl mx-auto w-full px-4">
+        <ShelterHero />
+        <ShelterRescueCards />
+        <ShelterKit />
+        <ShelterReceive />
+      </div>
+    </main>
+  );
 }
-
-export default ShelterAndRescuePage
-  
