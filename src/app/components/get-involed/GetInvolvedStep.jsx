@@ -1,6 +1,10 @@
+'use client';
 import Image from 'next/image';
+import { useState } from 'react';
+import AmbassadorModal from '../ambassador/AmbassadorModal';
 
 export default function GetInvolvedStep() {
+  const [modalOpen, setModalOpen] = useState(false);
   return (
     <div className="flex flex-col md:flex-row items-center justify-evenly md:items-start gap-10 w-full">
       {/* Left: Cat Image with organic border */}
@@ -31,7 +35,8 @@ export default function GetInvolvedStep() {
             </ol>
           </li>
         </ol>
-        <button className="font-poppins w-fit px-6 py-2 rounded-full bg-[#FF8B71] text-white font-semibold shadow-md hover:bg-[#ff6a3d] transition-colors duration-200 text-base mt-2">Become An Ambassador</button>
+        <button onClick={() => setModalOpen(true)} className="font-poppins w-fit px-6 py-2 rounded-full bg-[#FF8B71] text-white font-semibold shadow-md hover:bg-[#ff6a3d] transition-colors duration-200 text-base mt-2">Become An Ambassador</button>
+        <AmbassadorModal isOpen={modalOpen} onClose={() => setModalOpen(false)} />
       </div>
     </div>
   );

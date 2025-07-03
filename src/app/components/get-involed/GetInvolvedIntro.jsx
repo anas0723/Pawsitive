@@ -1,6 +1,10 @@
+'use client';
 import { FaHeart, FaIdBadge, FaBriefcase } from 'react-icons/fa';
+import { useState } from 'react';
+import AmbassadorModal from '../ambassador/AmbassadorModal';
 
 export default function GetInvolvedIntro() {
+  const [modalOpen, setModalOpen] = useState(false);
   return (
     <section className="mb-8">
       <h2 className="text-2xl md:text-3xl font-extrabold mb-2">We Love Pets & Care For Them</h2>
@@ -36,7 +40,8 @@ export default function GetInvolvedIntro() {
             <h3 className="font-extrabold text-lg mb-1">Become an Animal Welfare Ambassador</h3>
             <p className="mb-6 font-poppins font-normal text-[16px] leading-[25.76px] tracking-normal text-[#444] max-w-[567px] min-h-[129px]">Take your support to the next level by becoming an Animal Welfare Ambassador. When you join this program, you'll receive a Pawsitive Change credit card loaded with the amount you donated. You can use this card to purchase items that support the welfare of your pets or other animals in your community. From pet food and supplies to essential veterinary care, your donation goes even further by directly helping animals in your local area.</p>
           </div>
-          <button className="mt-4 w-full px-4 py-2 rounded-xl border border-gray-400 bg-white text-black font-semibold hover:bg-[#FF8B71] hover:text-white transition-colors duration-200 text-sm">Become An Ambassador</button>
+          <button onClick={() => setModalOpen(true)} className="mt-4 w-full px-4 py-2 rounded-xl border border-gray-400 bg-white text-black font-semibold hover:bg-[#FF8B71] hover:text-white transition-colors duration-200 text-sm">Become An Ambassador</button>
+          <AmbassadorModal isOpen={modalOpen} onClose={() => setModalOpen(false)} />
         </div>
       </div>
     </section>

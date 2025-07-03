@@ -5,6 +5,7 @@ import AboutIRSExpenses from './AboutIRSExpenses';
 import AboutDonationTransparency from './AboutDonationTransparency';
 import AboutPartners from './AboutPartners';
 import AboutTestimonials from './AboutTestimonials';
+import CatForm from '../common/CatForm';
 
 export default function AboutPage() {
   return (
@@ -38,6 +39,7 @@ export default function AboutPage() {
       <AboutDonationTransparency />
       <AboutPartners />
       <AboutTestimonials />
+      <CatForm/>
     </main>
   );
 } 

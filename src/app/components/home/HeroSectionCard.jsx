@@ -1,4 +1,7 @@
+'use client';
 import { FaHeart, FaHome, FaFire } from "react-icons/fa";
+import { useState } from "react";
+import AmbassadorModal from '../ambassador/AmbassadorModal';
 
 const cards = [
 	{
@@ -28,6 +31,7 @@ const cards = [
 ];
 
 export default function HeroSectionCard() {
+	const [modalOpen, setModalOpen] = useState(false);
 	return (
 		<section className="w-full max-w-7xl mx-auto px-4 py-10 bg-gradient-to-r from-[#FFF7F2] to-[#F7F7F7]">
 			<div className="mb-2 text-[#2ED47A] font-semibold text-sm">
@@ -52,12 +56,24 @@ export default function HeroSectionCard() {
 						</div>
 						<h3 className="text-lg font-bold text-gray-900">{card.title}</h3>
 						<p className="text-gray-600 text-base font-medium">{card.desc}</p>
-						<a
-							href={card.buttonLink}
-							className="mt-auto px-5 py-2 rounded-full border border-gray-300 bg-white text-gray-900 font-semibold shadow-sm hover:bg-[#FF8B71] hover:text-white transition-colors duration-200 text-base"
-						>
-							{card.button}
-						</a>
+						{i === 0 ? (
+							<>
+								<button
+									onClick={() => setModalOpen(true)}
+									className="mt-auto px-5 py-2 rounded-full border border-gray-300 bg-white text-gray-900 font-semibold shadow-sm hover:bg-[#FF8B71] hover:text-white transition-colors duration-200 text-base"
+								>
+									{card.button}
+								</button>
+								<AmbassadorModal isOpen={modalOpen} onClose={() => setModalOpen(false)} />
+							</>
+						) : (
+							<a
+								href={card.buttonLink}
+								className="mt-auto px-5 py-2 rounded-full border border-gray-300 bg-white text-gray-900 font-semibold shadow-sm hover:bg-[#FF8B71] hover:text-white transition-colors duration-200 text-base"
+							>
+								{card.button}
+							</a>
+						)}
 					</div>
 				))}
 			</div>
