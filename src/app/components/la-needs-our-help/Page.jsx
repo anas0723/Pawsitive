@@ -47,7 +47,7 @@ export default function LaNeedsOurHelpPage() {
         />
         <LaNeedsOurHelpConclusion />
         <LaNeedsOurHelpBlogs blogs={blogs} />
-      </div>
+        </div>
     </main>
   );
-}
+} 

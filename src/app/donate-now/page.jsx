@@ -1,7 +1,6 @@
 import DonateNowHero from "../components/donate-now/DonateNowHero";
 import DonateNowFormSection from "../components/donate-now/DonateNowFormSection";
 import DonateNowImpactSection from "../components/donate-now/DonateNowImpactSection";
-import Footer from "../components/common/Footer";
 
 export default function DonateNowPage() {
   return (
