@@ -1,5 +1,5 @@
 import React from 'react'
-import LaNeedOurHelpComponents from '../components/la-needs-our-help/page'
+import LaNeedOurHelpComponents from '../components/la-needs-our-help/Page'
 
 const LaNeedOurHelp = () => {
   return (

@@ -31,9 +31,6 @@ const Footer = () => {
         </div>
         {/* Center: Divider */}
         <div className="hidden md:flex flex-col items-center justify-center flex-1 min-w-[80px]">
-          <div className="border-t border-dashed border-gray-300 w-24 mb-2 relative">
-            <span className="absolute left-1/2 -top-3 -translate-x-1/2 bg-white px-2 text-gray-300 text-2xl select-none">✕</span>
-          </div>
         </div>
         {/* Right: Links */}
         <div className="flex flex-col sm:flex-row flex-1 gap-44 justify-end min-w-[180px] w-full md:w-auto items-center md:items-start">

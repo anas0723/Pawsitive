@@ -29,7 +29,6 @@ export default function DonateNowPage() {
           </div>
         </div>
       </main>
-      <Footer />
     </>
   );
 }
