@@ -6,15 +6,18 @@ import Link from "next/link";
 const CatForm = () => {
   return (
     <section className="relative w-full min-h-[420px] flex flex-col md:flex-row items-end justify-center overflow-hidden bg-[#FFF6E9] p-0">
-      {/* Top pink curve */}
-      <Image
-        src="/images/Pink-curve-line.png"
-        alt="Pink curve line"
-        width={1600}
-        height={180}
-        className="absolute top-0 left-0 w-full h-[80px] md:h-[120px] object-cover z-0"
-        priority
-      />
+      {/* Top SVG Curve */}
+      <svg
+        className="absolute top-0 left-0 w-full h-[80px] md:h-[120px] z-0"
+        viewBox="0 0 1440 320"
+        preserveAspectRatio="none"
+      >
+        <path
+          d="M0,80 C200,160,400,0,600,100 C800,200,1200,0,1440,120 L1440,0 L0,0 Z"
+          fill="#fff"
+          fillOpacity="1"
+        />
+      </svg>
       {/* Paw print background */}
       <Image
         src="/images/fott-print-with-from.png"
