@@ -21,7 +21,7 @@ const CatForm = () => {
       {/* Paw print background */}
       <Image
         src="/images/fott-print-with-from.png"
-        alt="Paw print bg"
+        alt="test Paw print bg"
         width={600}
         height={400}
         className="absolute right-0 bottom-0 w-2/3 md:w-[60%] h-2/3 md:h-[80%] object-contain opacity-40 z-0 pointer-events-none"
@@ -30,7 +30,7 @@ const CatForm = () => {
       <div className="relative z-10 flex-1 flex justify-center md:justify-end items-end min-w-0 max-w-xs md:max-w-[340px] h-[220px] md:h-[420px] mx-auto md:mx-0">
         <Image
           src="/images/end-main-cat.png"
-          alt="Cat"
+          alt="Test-cat"
           width={200}
           height={400}
           className="object-contain h-full w-auto"
@@ -38,7 +38,7 @@ const CatForm = () => {
         {/* Side paw print */}
         <Image
           src="/images/fott-print-with-cat.png"
-          alt="Side paw print"
+          alt="text Side paw print"
           width={80}
           height={120}
           className="absolute left-0 bottom-0 w-[60px] h-[60px] md:w-[90px] md:h-[90px] object-contain opacity-70 z-20"
