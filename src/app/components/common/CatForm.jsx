@@ -29,7 +29,7 @@ const CatForm = () => {
       {/* Cat image left */}
       <div className="relative z-10 flex-1 flex justify-center md:justify-end items-end min-w-0 max-w-xs md:max-w-[340px] h-[220px] md:h-[420px] mx-auto md:mx-0">
         <Image
-          src="/images/end-main-cat.png"
+          src="/images/end-main-cats.png"
           alt="Test-cat"
           width={200}
           height={400}
