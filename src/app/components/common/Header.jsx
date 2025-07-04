@@ -107,6 +107,9 @@ export default function Header() {
                 {link.name}
               </Link>
             ))}
+            <Link href="/donate-now" className="bg-[#FF5A5F] text-white rounded-2xl py-3 font-bold text-base mt-2 shadow-md hover:bg-[#e14c4f] transition-colors block text-center">
+              Donate Now
+            </Link>
           </div>
 
           {/* Overlay when menu is open */}

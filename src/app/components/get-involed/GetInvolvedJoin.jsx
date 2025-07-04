@@ -11,7 +11,7 @@ export default function GetInvolvedJoin() {
       <div className="bg-white shadow-2xl rounded-2xl  flex flex-col md:flex-row overflow-hidden">
         {/* Left Side */}
         <div className="flex-1 flex flex-col justify-center px-8 py-8 md:py-0 md:pl-10 md:pr-4">
-          <h2 className="font-poppins font-bold text-[45px] leading-[63px] tracking-normal text-[#222] mb-4 w-[552.38px] h-[189px]">
+          <h2 className="font-poppins font-bold text-[45px] leading-[63px] sm:text-3xl tracking-normal text-[#222] mb-4 w-[552.38px] h-[189px]">
             Join us in making a real difference for animals in need.
           </h2>
           <div className="font-poppins font-semibold text-[24px] leading-[30px] tracking-normal text-[#1CC8AE] mb-2">
@@ -34,4 +34,4 @@ export default function GetInvolvedJoin() {
       </div>
     </section>
   );
-} 
+}

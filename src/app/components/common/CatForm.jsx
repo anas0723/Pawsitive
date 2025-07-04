@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const CatForm = () => {
   return (
@@ -82,12 +83,9 @@ const CatForm = () => {
             className="w-full border border-[#F9CD86] rounded-2xl px-3 py-2 text-sm bg-white min-h-[60px] resize-vertical"
             required
           />
-          <button
-            type="submit"
-            className="w-full bg-[#FF5A5F] text-white rounded-2xl py-3 font-bold text-base mt-2 shadow-md hover:bg-[#e14c4f] transition-colors"
-          >
+          <Link href="/donate-now" className="w-full bg-[#FF5A5F] text-white rounded-2xl py-3 font-bold text-base mt-2 shadow-md hover:bg-[#e14c4f] transition-colors block text-center">
             Submit
-          </button>
+          </Link>
         </form>
       </div>
     </section>

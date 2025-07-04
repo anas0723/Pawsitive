@@ -2,6 +2,7 @@
 import { FaHeart, FaHome, FaFire } from "react-icons/fa";
 import { useState } from "react";
 import AmbassadorModal from '../ambassador/AmbassadorModal';
+import Link from 'next/link';
 
 const cards = [
 	{
@@ -47,15 +48,15 @@ export default function HeroSectionCard() {
 				{cards.map((card, i) => (
 					<div
 						key={i}
-						className="flex-1 min-w-[280px] max-w-full md:basis-[45%] lg:basis-0 bg-white rounded-2xl shadow p-8 flex flex-col items-start gap-4 mx-auto md:mx-0 overflow-hidden"
+						className="flex-1 min-w-[280px] max-w-[400px] md:basis-[45%] lg:basis-0 bg-white rounded-2xl shadow p-8 flex flex-col items-start gap-4 mx-auto md:mx-0"
 					>
 						<div
 							className={`w-12 h-12 flex items-center justify-center rounded-lg ${card.iconBg}`}
 						>
 							{card.icon}
 						</div>
-						<h3 className="text-lg font-bold text-gray-900 break-words">{card.title}</h3>
-						<p className="text-gray-600 text-base font-medium break-words">{card.desc}</p>
+						<h3 className="text-lg font-bold text-gray-900">{card.title}</h3>
+						<p className="text-gray-600 text-base font-medium">{card.desc}</p>
 						{i === 0 ? (
 							<>
 								<button
@@ -67,12 +68,9 @@ export default function HeroSectionCard() {
 								<AmbassadorModal isOpen={modalOpen} onClose={() => setModalOpen(false)} />
 							</>
 						) : (
-							<a
-								href={card.buttonLink}
-								className="mt-auto px-5 py-2 rounded-full border border-gray-300 bg-white text-gray-900 font-semibold shadow-sm hover:bg-[#FF8B71] hover:text-white transition-colors duration-200 text-base"
-							>
+							<Link href={card.buttonLink} className="mt-auto px-5 py-2 rounded-full border border-gray-300 bg-white text-gray-900 font-semibold shadow-sm hover:bg-[#FF8B71] hover:text-white transition-colors duration-200 text-base">
 								{card.button}
-							</a>
+							</Link>
 						)}
 					</div>
 				))}

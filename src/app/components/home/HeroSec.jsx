@@ -22,17 +22,13 @@ const HeroSec = () => {
               Transforming Lives?
             </span>
           </h1>
-          <p className="text-[#fff] text-xs xs:text-sm sm:text-base md:text-lg lg:text-xl mt-2 xs:mt-3 sm:mt-4 text-right sm:text-left max-w-full xs:max-w-[90vw] sm:max-w-md">
+          <div className="flex gap-[10px] mt-3 xs:mt-5 sm:mt-6 flex-row w-full sm:w-auto items-center sm:items-start">
+            <Link href="/donate-now" className="bg-[#EE5D56] text-white font-semibold w-[140px] xs:w-[167px] h-[44px] xs:h-[52px] rounded-[16px] shadow hover:bg-[#ff7a6c] transition-colors px-4 py-2 text-base xs:text-lg leading-none flex items-center justify-center whitespace-nowrap">Donate Now</Link>
+            <Link href="/request-kit" className="bg-white text-black font-semibold w-[167px] h-[52px] rounded-[16px] shadow border-4 border-gray-200 hover:bg-gray-100 transition-colors flex items-center justify-center">Request a kit</Link>
+          </div>
+             <p className="text-[#fff] text-xs mt-6 xs:text-sm sm:text-base md:text-lg lg:text-xl xs:mt-3 sm:mt-4 text-right sm:text-left max-w-full xs:max-w-[90vw] sm:max-w-md">
             Pawsitive Change delivers essential tools to shelters across the country—protecting pets from illness and giving them a real chance at a healthy, happy future.
           </p>
-          <div className="flex gap-[10px] mt-3 xs:mt-5 sm:mt-6 flex-row w-full sm:w-auto items-center sm:items-start">
-            <button className="bg-[#EE5D56] text-white font-semibold w-[167px] h-[52px] rounded-[16px] shadow hover:bg-[#ff7a6c] transition-colors px-[28px] py-[14px]">
-              Donate Now
-            </button>
-            <button className="bg-white text-black font-semibold w-[167px] h-[52px] rounded-[16px] shadow border-4 border-gray-200 hover:bg-gray-100 transition-colors">
-              Request a kit
-            </button>
-          </div>
         </div>
       </div>
     </div>

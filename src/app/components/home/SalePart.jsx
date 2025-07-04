@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from 'next/link';
 
 const features = [
 	{
@@ -50,9 +51,7 @@ const SalePart = () => {
 					Get exclusive discounts on pet essentials. Limited time offer for all
 					dog and cat lovers. Shop now and make your pet's day special!
 				</p>	
-				<button className="bg-[#FF5A5F] text-white rounded-2xl py-3 px-8 font-bold text-base shadow-md hover:bg-[#e14c4f] transition-colors">
-					Shop Now
-				</button>
+				<Link href="/donate-now" className="bg-[#FF5A5F] text-white rounded-2xl py-3 px-8 font-bold text-base mt-2 shadow-md hover:bg-[#e14c4f] transition-colors block text-center">Donate Now</Link>
 			</div>
 			{/* Dog Image */}
 			<div className="flex-1 flex justify-center md:justify-start items-end w-full max-w-xs md:max-w-sm mt-6 md:mt-0">
