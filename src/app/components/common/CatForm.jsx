@@ -4,129 +4,93 @@ import Image from "next/image";
 
 const CatForm = () => {
   return (
-    <div className="relative w-full min-h-[500px] bg-[#FFEBD8] overflow-hidden flex flex-col items-center justify-center py-10">
-      {/* Top Curve */}
-      <svg
-        className="absolute top-0 left-0 w-full"
-        viewBox="0 0 1440 320"
-        preserveAspectRatio="none"
-      >
-        <path
-          fill="#ffffff"
-          fillOpacity="1"
-          d="M0,120 C300,200 600,0 900,120 C1200,240 1440,40 1440,120 L1440,0 L0,0 Z"
-        ></path>
-      </svg>
-
-      {/* Paw prints as background pattern */}
-      <div className="absolute inset-0 z-0 pointer-events-none">
-        {/* Multiple paw prints, soft and scattered */}
+    <section className="relative w-full min-h-[420px] flex flex-col md:flex-row items-end justify-center overflow-hidden bg-[#FFF6E9] p-0">
+      {/* Top pink curve */}
+      <Image
+        src="/images/Pink-curve-line.png"
+        alt="Pink curve line"
+        width={1600}
+        height={180}
+        className="absolute top-0 left-0 w-full h-[80px] md:h-[120px] object-cover z-0"
+        priority
+      />
+      {/* Paw print background */}
+      <Image
+        src="/images/fott-print-with-from.png"
+        alt="Paw print bg"
+        width={600}
+        height={400}
+        className="absolute right-0 bottom-0 w-2/3 md:w-[60%] h-2/3 md:h-[80%] object-contain opacity-40 z-0 pointer-events-none"
+      />
+      {/* Cat image left */}
+      <div className="relative z-10 flex-1 flex justify-center md:justify-end items-end min-w-0 max-w-xs md:max-w-[340px] h-[220px] md:h-[420px] mx-auto md:mx-0">
         <Image
-          src="/images/fott-print-with-from.png"
-          alt="Paw prints background from"
-          width={120}
-          height={120}
-          className="absolute left-[10%] top-[30%] opacity-20 rotate-12"
-          style={{zIndex: 1}}
+          src="/images/end-main-cat.png"
+          alt="Cat"
+          width={200}
+          height={400}
+          className="object-contain h-full w-auto"
         />
+        {/* Side paw print */}
         <Image
-          src="/images/fott-print-with-from.png"
-          alt="Paw prints background from"
-          width={100}
-          height={100}
-          className="absolute left-[40%] top-[50%] opacity-20 -rotate-6"
-          style={{zIndex: 1}}
-        />
-        <Image
-          src="/images/fott-print-with-from.png"
-          alt="Paw prints background from"
-          width={90}
-          height={90}
-          className="absolute left-[70%] top-[20%] opacity-20 rotate-3"
-          style={{zIndex: 1}}
-        />
-        <Image
-          src="/images/fott-print-with-from.png"
-          alt="Paw prints background from"
-          width={110}
-          height={110}
-          className="absolute left-[80%] top-[60%] opacity-20 -rotate-12"
-          style={{zIndex: 1}}
-        />
-        <Image
-          src="/images/fott-print-with-from.png"
-          alt="Paw prints background from"
+          src="/images/fott-print-with-cat.png"
+          alt="Side paw print"
           width={80}
-          height={80}
-          className="absolute left-[60%] top-[80%] opacity-20 rotate-6"
-          style={{zIndex: 1}}
+          height={120}
+          className="absolute left-0 bottom-0 w-[60px] h-[60px] md:w-[90px] md:h-[90px] object-contain opacity-70 z-20"
         />
       </div>
-
-      {/* Main Content aligned with header */}
-      <div className="relative z-10 max-w-7xl mx-auto w-full px-4 flex flex-col md:flex-row items-center justify-center gap-8 mt-10">
-        {/* Cat Image */}
-        <div className="flex-shrink-0 flex items-end justify-center w-full md:w-1/2">
-          <Image
-            src="/images/End-main-cat.png"
-            alt="Cat"
-            width={260}
-            height={340}
-            className="object-contain"
-            priority
+      {/* Form section */}
+      <div className="relative z-20 flex-1 flex flex-col items-center justify-center min-h-[320px] md:min-h-[420px] w-full max-w-md px-2 sm:px-4 md:px-4 mx-auto">
+        <h2 className="font-bold text-xl md:text-2xl mb-4 md:mb-6 text-center text-[#222] leading-snug">
+          Let's Make A Pawsitive
+          <br />Change, Together!
+        </h2>
+        <form className="flex flex-wrap gap-2 md:gap-3 justify-center w-full">
+          <input
+            type="text"
+            placeholder="First name"
+            className="flex-1 min-w-0 md:min-w-[120px] border border-[#F9CD86] rounded-2xl px-3 py-2 text-sm bg-white"
+            required
           />
-        </div>
-        {/* Form Section */}
-        <div className="w-[479px] h-[472px] md:w-1/2 bg-transparent rounded-2xl  p-6 md:p-8 flex flex-col items-center">
-          <h2 className="font-bold text-xl md:text-2xl mb-6 text-[#222] leading-snug text-center">
-            Let’s Make A Pawsitive<br />Change, Together!
-          </h2>
-          <form className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
-            <input
-              type="text"
-              placeholder="First name"
-              className="border border-gray-200 rounded-lg px-3 py-2 text-sm bg-white col-span-1"
-              required
-            />
-            <input
-              type="text"
-              placeholder="Last name"
-              className="border border-gray-200 rounded-lg px-3 py-2 text-sm bg-white col-span-1"
-              required
-            />
-            <input
-              type="text"
-              placeholder="Phone No."
-              className="border border-gray-200 rounded-lg px-3 py-2 text-sm bg-white col-span-1"
-              required
-            />
-            <input
-              type="email"
-              placeholder="Email"
-              className="border border-gray-200 rounded-lg px-3 py-2 text-sm bg-white col-span-1"
-              required
-            />
-            <input
-              type="text"
-              placeholder="Subject"
-              className="border border-gray-200 rounded-lg px-3 py-2 text-sm bg-white col-span-2"
-              required
-            />
-            <textarea
-              placeholder="Message"
-              className="border border-gray-200 rounded-lg px-3 py-2 text-sm bg-white min-h-[60px] resize-vertical col-span-2"
-              required
-            />
-            <button
-              type="submit"
-              className="col-span-2 bg-[#FF5A5F] text-white rounded-lg py-3 font-bold text-base mt-2 shadow hover:bg-[#e14c4f] transition-colors"
-            >
-              Submit
-            </button>
-          </form>
-        </div>
+          <input
+            type="text"
+            placeholder="Last name"
+            className="flex-1 min-w-0 md:min-w-[120px] border border-[#F9CD86] rounded-2xl px-3 py-2 text-sm bg-white"
+            required
+          />
+          <input
+            type="text"
+            placeholder="Phone No."
+            className="flex-1 min-w-0 md:min-w-[120px] border border-[#F9CD86] rounded-2xl px-3 py-2 text-sm bg-white"
+            required
+          />
+          <input
+            type="email"
+            placeholder="Email"
+            className="flex-1 min-w-0 md:min-w-[120px] border border-[#F9CD86] rounded-2xl px-3 py-2 text-sm bg-white"
+            required
+          />
+          <input
+            type="text"
+            placeholder="Subject"
+            className="w-full border border-[#F9CD86] rounded-2xl px-3 py-2 text-sm bg-white"
+            required
+          />
+          <textarea
+            placeholder="Message"
+            className="w-full border border-[#F9CD86] rounded-2xl px-3 py-2 text-sm bg-white min-h-[60px] resize-vertical"
+            required
+          />
+          <button
+            type="submit"
+            className="w-full bg-[#FF5A5F] text-white rounded-2xl py-3 font-bold text-base mt-2 shadow-md hover:bg-[#e14c4f] transition-colors"
+          >
+            Submit
+          </button>
+        </form>
       </div>
-    </div>
+    </section>
   );
 };
 

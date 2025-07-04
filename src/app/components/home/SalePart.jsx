@@ -30,62 +30,40 @@ const features = [
 	},
 ];
 
-export default function SalePart() {
+const SalePart = () => {
 	return (
-		<section className="mx-auto flex max-w-7xl flex-col items-center justify-center gap-10 px-4 py-14 md:flex-row">
-			{/* Left: Text and features */}
-			<div className="flex-1 flex-col items-start justify-center gap-6 md:flex">
-				<div className="mb-1 text-sm font-semibold text-[#2ED47A]">
-					Why Choose Us
-				</div>
-				<h2 className="mb-2 text-2xl font-extrabold text-gray-900 sm:text-3xl md:text-4xl">
-					What Sets Us Apart
+		<section className="w-full bg-[#FFF6E9] py-10 px-2 sm:px-6 md:px-12 lg:px-24 flex flex-col md:flex-row items-center justify-between gap-8 md:gap-4 overflow-x-hidden">
+			{/* Cat Image */}
+			<div className="flex-1 flex justify-center md:justify-end items-end w-full max-w-xs md:max-w-sm mb-6 md:mb-0">
+				<img
+					src="/images/End-main-cat.png"
+					alt="Cat"
+					className="object-contain h-40 w-auto md:h-72"
+				/>
+			</div>
+			{/* Sale Text */}
+			<div className="flex-1 flex flex-col items-center md:items-start text-center md:text-left w-full max-w-xl">
+				<h2 className="font-bold text-2xl md:text-3xl mb-4 text-[#222] leading-snug">
+					Special Sale for Our Furry Friends!
 				</h2>
-				<div className="mb-4 flex w-full flex-col gap-4">
-					{features.map((f, i) => (
-						<div
-							key={i}
-							className="flex items-start gap-3 rounded-xl bg-white p-4 shadow-sm"
-						>
-							<div className="flex-shrink-0">{f.icon}</div>
-							<div>
-								<div className="mb-1 text-base font-bold text-gray-900">
-									{f.title}
-								</div>
-								<div className="text-sm font-medium text-gray-600">
-									{f.desc}
-								</div>
-							</div>
-						</div>
-					))}
-				</div>
-				<button className="rounded-full bg-[#FF8B71] px-6 py-2 text-base font-semibold text-white shadow hover:bg-[#FD7064] transition-colors duration-200">
-					Contact Us
+				<p className="text-gray-700 text-base mb-6">
+					Get exclusive discounts on pet essentials. Limited time offer for all
+					dog and cat lovers. Shop now and make your pet's day special!
+				</p>	
+				<button className="bg-[#FF5A5F] text-white rounded-2xl py-3 px-8 font-bold text-base shadow-md hover:bg-[#e14c4f] transition-colors">
+					Shop Now
 				</button>
 			</div>
-			{/* Right: Images */}
-			<div className="flex-1 flex items-center justify-center relative min-h-[320px]">
-				{/* Main cat and dog image in a white circle with shadow */}
-				<div className="w-80 h-80 bg-white rounded-full shadow-lg flex items-center justify-center overflow-hidden relative z-10">
-					<Image
-						src="/images/dog-cat-main.png"
-						alt="Cat and Dog"
-						width={320}
-						height={320}
-						className="object-cover z-10"
-					/>
-				</div>
-				{/* Side dog image in a smaller white circle with shadow, overlapping bottom right */}
-				<div className="w-32 h-32 bg-white rounded-full shadow-lg flex items-center justify-center overflow-hidden absolute right-0 bottom-0 z-20 border-4 border-white">
-					<Image
-						src="/images/side-dog.png"
-						alt="Side Dog"
-						width={120}
-						height={120}
-						className="object-cover z-20"
-					/>
-				</div>
+			{/* Dog Image */}
+			<div className="flex-1 flex justify-center md:justify-start items-end w-full max-w-xs md:max-w-sm mt-6 md:mt-0">
+				<img
+					src="/images/dog-left-end-section.jpg"
+					alt="Dog"
+					className="object-contain h-40 w-auto md:h-72"
+				/>
 			</div>
 		</section>
 	);
-}
+};
+
+export default SalePart;

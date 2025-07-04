@@ -88,16 +88,16 @@ We welcome contributions! Please fork the repository, create a new branch, and s
 
 ## 📄 License
 
-This project is for educational and non-profit use. For commercial use or questions, please contact the maintainers.
+This project is for educational and non-profit use. For commercial use or questions, please contact the Mee.
 
 ---
 
 ## 📬 Contact & Social
 
 - **Website:** [Pawsitive Change](#)
-- **Instagram:** [@pawsitivechange](#)
-- **Facebook:** [Pawsitive Change](#)
-- **Email:** [Contact Us](#)
+- **Instagram:** [@muhammadanas0723](#)
+- **Facebook:** [anas0723](#)
+- **Email:** [anassoomro23@gmail.com](#)
 
 ---
 
