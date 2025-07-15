@@ -27,7 +27,7 @@ const features = [
 
 export default function WhatSetsUsApart() {
   return (
-    <section className="w-full max-w-7xl mx-auto px-4 py-16 flex flex-col md:flex-row items-center gap-10 md:gap-0 bg-white">
+    <section className="w-full max-w-7xl mx-auto px-4 py-16 flex flex-col md:flex-row justify-between items-center gap-10 md:gap-0 bg-white">
       {/* Left: Text & Features */}
       <div className="flex-1 flex flex-col items-start justify-center gap-6 max-w-xl">
         <span className="text-[#2ED47A] font-semibold text-sm mb-2">Why Choose Us</span>
@@ -35,7 +35,7 @@ export default function WhatSetsUsApart() {
         <div className="flex flex-col gap-6 w-full">
           {features.map((f, i) => (
             <div key={i} className="flex items-start gap-4">
-              <div className={`flex items-center justify-center w-10 h-10 rounded-lg border-2 font-bold text-base ${f.color}`}>{f.number}</div>
+              <div className={`flex items-center justify-center w-24 h-10 rounded-lg border-2 font-bold text-base ${f.color}`}>{f.number}</div>
               <div>
                 <div className="font-bold text-lg text-gray-900 mb-1">{f.title}</div>
                 <div className="text-gray-500 text-base font-medium leading-snug">{f.desc}</div>
@@ -46,27 +46,27 @@ export default function WhatSetsUsApart() {
         <button className="mt-8 flex items-center justify-center w-[140px] h-[44px] rounded-[12px] border border-[#FF8B71] bg-[#FF8B71] text-white font-semibold px-6 py-2 gap-2 text-base shadow-sm transition-all duration-150 hover:bg-[#FD7064] focus:outline-none">Contact us</button>
       </div>
       {/* Right: Images */}
-      <div className="flex-1 flex items-center justify-center relative min-h-[370px]">
+      <div className="flex flex-col items-end justify-center flex-1 relative min-h-[370px]">
         {/* Large circle with dog and cat */}
-        <div className="relative w-[320px] h-[320px] md:w-[352px] md:h-[352px] rounded-full bg-white shadow-lg flex items-center justify-center overflow-visible">
+        <div className="relative w-[308px] h-[308px] rounded-full bg-white shadow-lg flex items-center justify-center overflow-visible">
           <Image
             src="/images/last-sub-section/dog-cat-main.png"
             alt="Dog and Cat"
-            width={320}
-            height={320}
+            width={308}
+            height={308}
             className="object-cover z-10 rounded-full"
             priority
           />
-        </div>
-        {/* Small circle with side dog, overlapping bottom right */}
-        <div className="absolute right-[-30px] bottom-[-20px] w-[120px] h-[120px] md:w-[140px] md:h-[140px] rounded-full bg-white shadow-lg flex items-center justify-center overflow-visible">
-          <Image
-            src="/images/last-sub-section/side-dog.png"
-            alt="Dog"
-            width={120}
-            height={120}
-            className="object-cover z-20 rounded-full"
-          />
+          {/* Small circle with side dog, overlapping and connected to main image */}
+          <div className="absolute w-[130px] h-[130px] rounded-full bg-white shadow-lg flex items-center justify-center overflow-visible border-4 border-white z-20" style={{ bottom: '-30px', right: '-30px' }}>
+            <Image
+              src="/images/last-sub-section/side-dog.png"
+              alt="Dog"
+              width={130}
+              height={130}
+              className="object-cover rounded-full"
+            />
+          </div>
         </div>
       </div>
     </section>
