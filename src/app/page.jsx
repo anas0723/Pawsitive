@@ -14,7 +14,7 @@ const HomePage = () => {
       <HeroSec />
       <ServicesSection />
       <HeroSectionCard /> 
-      <SalePart />
+      {/* <SalePart /> */}
       <ProductCards />
       <FrequentlyAskedQuestions />
       <CatForm />

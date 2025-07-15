@@ -49,7 +49,7 @@ export default function HeroSectionCard() {
 				{cards.map((card, i) => (
 					<div
 						key={i}
-						className="flex-1 min-w-[280px] max-w-[400px] md:basis-[45%] lg:basis-0 bg-white rounded-2xl shadow p-8 flex flex-col items-start gap-4 mx-auto md:mx-0"
+						className="flex-1 min-w-[280px] max-w-[400px] md:basis-[45%] lg:basis-0 bg-white rounded-2xl p-8 flex flex-col items-start gap-4 mx-auto md:mx-0 shadow-xl"
 					>
 						<div
 							className={`w-12 h-12 flex items-center justify-center rounded-lg ${card.iconBg}`}
@@ -62,7 +62,15 @@ export default function HeroSectionCard() {
 							<>
 								<button
 									onClick={() => setModalOpen(true)}
-									className="mt-auto px-5 py-2 rounded-full border border-gray-300 bg-white text-gray-900 font-semibold shadow-sm hover:bg-[#FF8B71] hover:text-white transition-colors duration-200 text-base"
+									className="
+  bg-gradient-to-r from-[#FD7064] to-[#FF8B71]
+  shadow-[ -1px_4px_12px_0px_rgba(0,0,0,0.1)]
+  border-4 border-[#ED5854]
+  rounded-[16px]
+  px-[15px] pt-[11px] pb-[10px]
+  text-[14px] font-medium capitalize
+  transition-colors text-white 
+ w-full block text-center mt-4"
 								>
 									{card.button}
 								</button>

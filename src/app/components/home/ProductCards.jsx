@@ -34,7 +34,12 @@ export default function ProductCards() {
             <Image src={p.img} alt={p.title} width={120} height={120} className="object-contain" />
             <div className="font-bold text-base text-gray-900 text-center">{p.title}</div>
             <div className="text-gray-500 text-sm mb-4">{p.price}</div>
-            <button className="px-5 py-2 rounded-full border border-gray-300 bg-white text-gray-900 font-semibold shadow-sm hover:bg-[#FF8B71] hover:text-white transition-colors duration-200 text-base">Buy Now</button>
+            <button
+              className="flex items-center justify-center w-[262px] h-[52px] rounded-[16px] border  bg-white  font-semibold px-[28px] py-[14px] gap-[10px] text-base shadow-sm transition-all duration-150 hover:bg-[#FF8B71] hover:text-white"
+              style={{ alignSelf: 'center' }}
+            >
+              Buy Now
+            </button>
           </div>
         ))}
       </div>
