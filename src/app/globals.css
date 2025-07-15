@@ -1,3 +1,6 @@
+/* Import Poppins from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
 @import "tailwindcss";
 
 :root {
@@ -17,6 +20,10 @@
     --background: #0a0a0a;
     --foreground: #ededed;
   }
+}
+
+html, body, :root {
+  font-family: 'Poppins', sans-serif;
 }
 
 .main-light{

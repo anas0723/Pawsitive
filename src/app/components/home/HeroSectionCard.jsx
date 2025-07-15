@@ -3,6 +3,7 @@ import { FaHeart, FaHome, FaFire } from "react-icons/fa";
 import { useState } from "react";
 import AmbassadorModal from '../ambassador/AmbassadorModal';
 import Link from 'next/link';
+import { CTA_BUTTON_CLASSES } from "../common/CTAButtonClasses";
 
 const cards = [
 	{
@@ -68,7 +69,7 @@ export default function HeroSectionCard() {
 								<AmbassadorModal isOpen={modalOpen} onClose={() => setModalOpen(false)} />
 							</>
 						) : (
-							<Link href={card.buttonLink} className="mt-auto px-5 py-2 rounded-full border border-gray-300 bg-white text-gray-900 font-semibold shadow-sm hover:bg-[#FF8B71] hover:text-white transition-colors duration-200 text-base">
+							<Link href={card.buttonLink} className={CTA_BUTTON_CLASSES + " w-full block text-center mt-4"}>
 								{card.button}
 							</Link>
 						)}

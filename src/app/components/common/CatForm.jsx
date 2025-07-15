@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { CTA_BUTTON_CLASSES } from "../common/CTAButtonClasses";
 
 const CatForm = () => {
   return (
@@ -86,7 +87,13 @@ const CatForm = () => {
             className="w-full border border-[#F9CD86] rounded-2xl px-3 py-2 text-sm bg-white min-h-[60px] resize-vertical"
             required
           />
-          <Link href="/donate-now" className="w-full bg-[#FF5A5F] text-white rounded-2xl py-3 font-bold text-base mt-2 shadow-md hover:bg-[#e14c4f] transition-colors block text-center">
+          <Link
+            href="/donate-now"
+            className={
+              CTA_BUTTON_CLASSES +
+              " w-full block text-center"
+            }
+          >
             Submit
           </Link>
         </form>
@@ -97,4 +104,4 @@ const CatForm = () => {
 
 export default CatForm;
 
-// trying to changes commit 
+// trying to changes commit

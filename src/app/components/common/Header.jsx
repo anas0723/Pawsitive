@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 import { useRouter } from "next/router";
+import { CTA_BUTTON_CLASSES } from "../common/CTAButtonClasses";
 const navLinks = [
   { name: "Home", href: "/" },
   { name: "About Us", href: "/about-us" },
@@ -21,16 +22,16 @@ export default function Header() {
 
   return (
     <>
-      <header className="sticky top-0 z-50 bg-white shadow-md">
+      <header className=" top-0 z-50 bg-white shadow-md">
         <div className="w-full lg:max-w-7xl lg:mx-auto lg:px-4 flex items-center justify-between py-2 md:py-3">
           {/* Logo */}
           <Link href="/" className="flex items-start gap-2 select-none ">
             <Image
               src="/images/PawsitiveChangeLogo 1.png"
               alt="Pawsative Logo"
-              width={111}
-              height={82}
-              className="w-10 h-10 object-contain"
+              width={111.11}
+              height={82.56}
+              className="w-[111.11px] h-[82.56px] object-contain"
               priority
             />
           </Link>
@@ -53,7 +54,7 @@ export default function Header() {
           {/* Donate Button (Desktop) */}
           <Link
             href="/donate-now"
-            className="ml-8 px-5 py-2 rounded-full bg-[#FF8B71] text-white font-semibold shadow hover:bg-[#FD7064] transition-colors duration-200 text-base hidden md:inline-block"
+            className={"ml-8 hidden md:inline-block " + CTA_BUTTON_CLASSES}
           >
             Donate Now
           </Link>
@@ -62,7 +63,7 @@ export default function Header() {
           <div className="flex items-center gap-2 md:hidden">
             <Link
               href="/donate-now"
-              className="ml-2 px-5 py-2 rounded-full bg-[#FF8B71] text-white font-semibold shadow hover:bg-[#FD7064] transition-colors duration-200 text-base"
+              className={"ml-2 md:hidden " + CTA_BUTTON_CLASSES}
             >
               Donate Now
             </Link>
@@ -107,7 +108,10 @@ export default function Header() {
                 {link.name}
               </Link>
             ))}
-            <Link href="/donate-now" className="bg-[#FF5A5F] text-white rounded-2xl py-3 font-bold text-base mt-2 shadow-md hover:bg-[#e14c4f] transition-colors block text-center">
+            <Link
+              href="/donate-now"
+              className={CTA_BUTTON_CLASSES + " mt-2"}
+            >
               Donate Now
             </Link>
           </div>
