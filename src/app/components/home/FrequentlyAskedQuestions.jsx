@@ -17,9 +17,9 @@ const faqData = [
 const FrequentlyAskedQuestions = () => {
 	const [openIndex, setOpenIndex] = useState(-1);
 
-	return (
-		<section className="bg-white pt-10">
-			<div className="max-w-3xl mx-auto relative z-20">
+  return (
+	<section className="bg-white pt-10">
+	  <div className="max-w-7xl mx-auto px-4 sm:px-10 relative z-20">
 				<div className="flex items-center gap-2 mb-2">
 					<span className="text-green-400 font-bold text-xs">FAQs</span>
 				</div>
@@ -42,7 +42,7 @@ const FrequentlyAskedQuestions = () => {
 						</div>
 						<div className="mt-1.5">
 							<span
-								className={`inline-block w-6 h-6 rounded-full text-center font-bold text-lg leading-6 cursor-pointer select-none transition-colors duration-200 ${
+								className={`inline-block w-6 h-6 rounded-full text-center  text-lg leading-6 cursor-pointer select-none transition-colors duration-200 ${
 									openIndex === idx ? 'bg-red-500 text-white' : 'bg-gray-100 text-gray-900'
 								}`}
 								onClick={() => setOpenIndex(idx === openIndex ? -1 : idx)}

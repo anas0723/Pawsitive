@@ -46,25 +46,25 @@ export default function WhatSetsUsApart() {
         <button className="mt-8 flex items-center justify-center w-[140px] h-[44px] rounded-[12px] border border-[#FF8B71] bg-[#FF8B71] text-white font-semibold px-6 py-2 gap-2 text-base shadow-sm transition-all duration-150 hover:bg-[#FD7064] focus:outline-none">Contact us</button>
       </div>
       {/* Right: Images */}
-      <div className="flex flex-col items-end justify-center flex-1 relative min-h-[370px]">
+      <div className="flex flex-col items-end justify-center flex-1 relative min-h-[220px] sm:min-h-[320px] md:min-h-[370px]">
         {/* Large circle with dog and cat */}
-        <div className="relative w-[308px] h-[308px] rounded-full bg-white shadow-lg flex items-center justify-center overflow-visible">
+        <div className="relative w-[180px] h-[180px] sm:w-[240px] sm:h-[240px] md:w-[308px] md:h-[308px] rounded-full bg-white shadow-lg flex items-center justify-center overflow-visible">
           <Image
             src="/images/last-sub-section/dog-cat-main.png"
             alt="Dog and Cat"
             width={308}
             height={308}
-            className="object-cover z-10 rounded-full"
+            className="object-cover z-10 rounded-full w-[180px] h-[180px] sm:w-[240px] sm:h-[240px] md:w-[308px] md:h-[308px]"
             priority
           />
           {/* Small circle with side dog, overlapping and connected to main image */}
-          <div className="absolute w-[130px] h-[130px] rounded-full bg-white shadow-lg flex items-center justify-center overflow-visible border-4 border-white z-20" style={{ bottom: '-30px', right: '-30px' }}>
+          <div className="absolute w-[70px] h-[70px] sm:w-[100px] sm:h-[100px] md:w-[130px] md:h-[130px] rounded-full bg-white shadow-lg flex items-center justify-center overflow-visible border-4 border-white z-20" style={{ bottom: '-16px', right: '-16px' }}>
             <Image
               src="/images/last-sub-section/side-dog.png"
               alt="Dog"
               width={130}
               height={130}
-              className="object-cover rounded-full"
+              className="object-cover rounded-full w-[70px] h-[70px] sm:w-[100px] sm:h-[100px] md:w-[130px] md:h-[130px]"
             />
           </div>
         </div>

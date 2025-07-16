@@ -119,30 +119,31 @@ const ServicesSection = () => {
       </div>
 
       {/* Pawsitive Program Section */}
-      <section className="w-full max-w-7xl mx-auto px-4 py-8 sm:py-10 flex flex-col md:flex-row items-center gap-6 sm:gap-10 bg-white mt-10 md:mt-16">
+      <section className="w-full max-w-7xl mx-auto px-4 py-8 sm:py-10 flex flex-col md:flex-row md:items-center items-start gap-8 md:gap-16 bg-white mt-10 md:mt-16">
         {/* Image */}
-        <div className="relative flex-shrink-0 flex items-center justify-center w-full md:w-[469.81px] h-[569.26px] mb-8 md:mb-0">
-          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[478.97px] h-[478.97px] bg-[#EAF7FF] rounded-full z-0"></div>
+        <div className="relative flex-shrink-0 flex items-center justify-center w-full sm:w-[340px] md:w-[469.81px] h-[320px] sm:h-[420px] md:h-[569.26px] mb-8 md:mb-0">
+          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[220px] h-[220px] sm:w-[340px] sm:h-[340px] md:w-[478.97px] md:h-[478.97px] bg-[#EAF7FF] rounded-full z-0"></div>
           <Image
             src="/images/aunt-with-dog.png"
             alt="Woman with dog"
             width={320}
             height={320}
-            className="relative z-10 object-contain drop-shadow-xl w-[469.81px] h-[569.26px]"
+            className="relative z-10 object-contain drop-shadow-xl w-[220px] h-[220px] sm:w-[340px] sm:h-[340px] md:w-[469.81px] md:h-[569.26px]"
             priority
           />
-          <div className="absolute bottom-4 right-4 opacity-20 z-0 hidden sm:block">
+          <div className="absolute bottom-2 right-2 opacity-20 z-0 hidden sm:block">
             <Image
               src="/images/paw-print.svg"
               alt="Paw Print"
-              width={40}
-              height={40}
+              width={32}
+              height={32}
+              className="w-8 h-8 sm:w-10 sm:h-10"
             />
           </div>
         </div>
 
         {/* Content */}
-        <div className="flex-1 flex flex-col items-start justify-center gap-4 w-full ml-24">
+        <div className="flex-1 flex flex-col items-start justify-center gap-4 w-full md:ml-12">
           <h2 className="text-xl sm:text-2xl md:text-4xl font-extrabold text-gray-900 mb-2">
             A Pawsitive Program
           </h2>

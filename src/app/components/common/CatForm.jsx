@@ -6,7 +6,7 @@ import { CTA_BUTTON_CLASSES } from "../common/CTAButtonClasses";
 
 const CatForm = () => {
   return (
-    <section className="relative w-full min-h-[420px] flex flex-col md:flex-row items-end justify-center overflow-hidden bg-[#FFF6E9] p-0">
+    <section className="relative w-full max-w-7xl mx-auto px-4 sm:px-10 min-h-[420px] flex flex-col md:flex-row items-end justify-center md:gap-[123px] overflow-hidden bg-[#FFF6E9] p-0">
       {/* Top SVG Curve */}
       <svg
         className="absolute top-0 left-0 w-full h-[80px] md:h-[120px] z-0"
