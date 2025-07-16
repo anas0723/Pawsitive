@@ -72,7 +72,7 @@ const ServicesSection = () => {
 
       {/* Main Heading & Subheading */}
       <div className="flex flex-col md:flex-row md:items-center md:justify-between sm:mb-8 gap-4">
-        <h2 className="text-xl sm:text-2xl md:text-4xl font-extrabold text-[#2E2E38] leading-tight">
+        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold text-[#2E2E38] leading-tight">
           Comprehensive
           <br className="hidden sm:block" /> Support For Animal Shelters
         </h2>
@@ -83,7 +83,7 @@ const ServicesSection = () => {
       </div>
 
       {/* Service Cards */}
-      <div className="w-full  justify-center grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-4 sm:gap-6 px-2 md:px-0 box-border">
+      <div className="w-full justify-center grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 px-2 md:px-0 box-border">
         {services.map((service, i) => (
           <div
             key={i}
@@ -98,11 +98,11 @@ const ServicesSection = () => {
               >
                 {service.icon}
               </div>
-              <span className="font-poppins font-extrabold text-[32px] leading-[25.76px] tracking-normal text-gray-900 z-10">
+              <span className="font-poppins font-extrabold text-[24px] sm:text-[28px] md:text-[32px] leading-[25.76px] tracking-normal text-gray-900 z-10">
                 {service.title}
               </span>
             </div>
-            <p className="text-[#333333] text-sm sm:text-base font-medium">
+            <p className="text-[#333333] text-xs sm:text-sm md:text-base font-medium">
               {service.desc}
             </p>
 
@@ -119,31 +119,31 @@ const ServicesSection = () => {
       </div>
 
       {/* Pawsitive Program Section */}
-      <section className="w-full max-w-7xl mx-auto px-4 py-8 sm:py-10 flex flex-col md:flex-row md:items-center items-start gap-8 md:gap-16 bg-white mt-10 md:mt-16">
+      <section className="w-full max-w-7xl mx-auto px-4 py-8 sm:py-10 flex flex-col lg:flex-row lg:items-center items-start gap-8 lg:gap-16 bg-white mt-10 lg:mt-16">
         {/* Image */}
-        <div className="relative flex-shrink-0 flex items-center justify-center w-full sm:w-[340px] md:w-[469.81px] h-[320px] sm:h-[420px] md:h-[569.26px] mb-8 md:mb-0">
-          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[220px] h-[220px] sm:w-[340px] sm:h-[340px] md:w-[478.97px] md:h-[478.97px] bg-[#EAF7FF] rounded-full z-0"></div>
+        <div className="relative flex-shrink-0 flex items-center justify-center w-full xs:w-[220px] sm:w-[340px] md:w-[420px] lg:w-[469.81px] h-[220px] xs:h-[320px] sm:h-[420px] md:h-[520px] lg:h-[569.26px] mb-8 lg:mb-0">
+          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[180px] xs:w-[220px] sm:w-[340px] md:w-[420px] lg:w-[478.97px] h-[180px] xs:h-[220px] sm:h-[340px] md:h-[420px] lg:h-[478.97px] bg-[#EAF7FF] rounded-full z-0"></div>
           <Image
             src="/images/aunt-with-dog.png"
             alt="Woman with dog"
             width={320}
             height={320}
-            className="relative z-10 object-contain drop-shadow-xl w-[220px] h-[220px] sm:w-[340px] sm:h-[340px] md:w-[469.81px] md:h-[569.26px]"
+            className="relative z-10 object-contain drop-shadow-xl w-[140px] xs:w-[180px] sm:w-[260px] md:w-[320px] lg:w-[469.81px] h-[140px] xs:h-[180px] sm:h-[260px] md:h-[320px] lg:h-[569.26px]"
             priority
           />
-          <div className="absolute bottom-2 right-2 opacity-20 z-0 hidden sm:block">
+          <div className="absolute bottom-2 right-2 opacity-20 z-0 hidden xs:block">
             <Image
               src="/images/paw-print.svg"
               alt="Paw Print"
               width={32}
               height={32}
-              className="w-8 h-8 sm:w-10 sm:h-10"
+              className="w-8 h-8 xs:w-10 xs:h-10 sm:w-12 sm:h-12"
             />
           </div>
         </div>
 
         {/* Content */}
-        <div className="flex-1 flex flex-col items-start justify-center gap-4 w-full md:ml-12">
+        <div className="flex-1 flex flex-col items-start justify-center gap-4 w-full lg:ml-12">
           <h2 className="text-xl sm:text-2xl md:text-4xl font-extrabold text-gray-900 mb-2">
             A Pawsitive Program
           </h2>

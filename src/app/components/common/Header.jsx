@@ -37,13 +37,13 @@ export default function Header() {
           </Link>
           {/* Centered Nav Links */}
           <div className="flex-1 flex justify-center">
-            <nav className="hidden md:flex gap-8 text-sm font-medium text-[#161821]">
+            <nav className="hidden md:flex gap-8 font-poppins font-medium text-[14px] leading-[1] tracking-normal text-[#161821]">
               {navLinks.slice(1).map((link) => (
                 <Link
                   key={link.name}
                   href={link.href}
-                  className={`font-medium transition-colors duration-200 ${
-                    pathname === link.href ? "text-[#FD7064]" : "text-gray-600"
+                  className={`font-medium font-poppins text-[14px] leading-[1] tracking-normal transition-colors duration-200 ${
+                    pathname === link.href ? "text-[#FD7064]" : "text-[#161821]"
                   } hover:text-[#FF8B71]`}
                 >
                   {link.name}

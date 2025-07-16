@@ -53,7 +53,7 @@ export default function AboutDonationTransparency() {
         {/* Right: Image */}
         <div className="flex-shrink-0">
           <div className="w-[220px] h-[220px] md:w-[260px] md:h-[260px] rounded-full overflow-hidden bg-white flex items-center justify-center">
-            <Image src="/images/about-us/dog-cat-right-end.png" alt="Cat and Dog" width={260} height={260} className="object-cover w-full h-full" priority />
+            <Image src="/images/about-us/dog-cat-right-end.png" alt="Cat and Dog" width={835} height={580} className="object-cover w-full h-full" priority />
           </div>
         </div>
       </div>

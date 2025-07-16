@@ -8,7 +8,7 @@ const testimonials = [
     name: 'Gabriella Jew',
     title: 'Director',
     avatar: '/images/about-us/lady.png',
-    text: '"Your donations have been a game-changer for our rescue. The added IRS-eligible solutions and transparency make it easy for our supporters to give with confidence. We\'re so grateful for the difference you\'re making in the lives of animals!"',
+    text: '“Your donations have been a game changer for Muttville. Your disinfection solutions and equipment have allowed us to make our open shelter model work and still healthy for the dogs. They have also energized our volunteers because they are so easy to use, anyone at any age can operate them. We’ve had volunteers fighting over the chance to clean and disinfect!”',
   },
   // Add more testimonials as needed
 ];
@@ -30,7 +30,7 @@ export default function AboutTestimonials() {
             <Image src={t.avatar} alt={t.name} width={56} height={56} className="rounded-full mb-2 object-cover" />
             <div className="font-poppins font-bold text-lg text-[#222]">{t.name}</div>
             <div className="font-poppins text-[15px] text-[#888] mb-3">{t.title}</div>
-            <div className="font-poppins text-[16px] leading-[25.76px] text-[#444]">{t.text}</div>
+            <div className="font-poppins text-[16px] leading-[25.76px] text-[#3D3D3D]">{t.text}</div>
           </div>
           <button onClick={next} className="absolute right-0 top-1/2 -translate-y-1/2 bg-white rounded-full shadow w-9 h-9 flex items-center justify-center text-[#222] hover:bg-[#FF8B71] hover:text-white transition-colors duration-200 z-10">
             <FaChevronRight />

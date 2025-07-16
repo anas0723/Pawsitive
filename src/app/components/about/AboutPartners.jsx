@@ -13,8 +13,8 @@ export default function AboutPartners() {
               <div className="flex items-center gap-2 mb-2">
                 <Image src="/images/about-us/muttville-logo.png" alt="Muttville Logo" width={366} height={72} className="object-contain" />
               </div>
-              <p className="font-poppins text-[15px] text-[#444] mb-2">Muttville Senior Dog Rescue rescues and rehomes senior dogs (ages 7+). Every dog gets a loving home, medical care, and a second chance at life. Their mission is to create better lives for senior dogs and the people who love them. <a href="#" className="text-[#FF8B71] underline">Read more</a></p>
-              <p className="font-poppins text-[15px] text-[#444]">Muttville works outside senior dog at risk, gives them the care they need and connects them to their loving forever families.</p>
+              <p className="font-poppins text-[15px] text-[#000] ">Muttville Senior Dog Rescue rescues and shelters senior dogs ages 7+. Every day dogs in good health with hearts of gold, and wonderful personalities are euthanized. Why? Because they’re older, and not considered adoptable under typical circumstances.
+                <p className='mt-6 text-black'>Muttville reaches out to senior dogs at risk, gives them the care they need, and finds them loving forever homes.  </p> </p>
             </div>
             {/* <div className="flex gap-2 mt-4">
               <span className="w-3 h-3 rounded-full bg-[#FF8B71] inline-block"></span>
