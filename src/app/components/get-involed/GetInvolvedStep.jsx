@@ -9,7 +9,7 @@ export default function GetInvolvedStep() {
     <div className="flex flex-col md:flex-row items-center justify-evenly md:items-start gap-10 w-full">
       {/* Left: Cat Image with organic border */}
       <div className="relative flex-shrink-0">
-        <div className="w-[340px] h-[340px] md:w-[380px] md:h-[380px] rounded-[50%_45%_50%_55%/55%_50%_45%_50%] border-4 border-[#FFF9E1] bg-[#FFF9E1] flex items-center justify-center overflow-hidden">
+        <div className="w-[559.17px] h-[554.6px] rounded-[50%_45%_50%_55%/55%_50%_45%_50%] border-[18px] border-[#FFF9E1] bg-[#FFF9E1] flex items-center justify-center overflow-hidden">
           <Image
             src="/images/get-involved/Cat-last.png"
             alt="Cat"
@@ -21,7 +21,7 @@ export default function GetInvolvedStep() {
         </div>
       </div>
       {/* Right: Content */}
-      <div className="flex-1 flex flex-col justify-center max-w-xl">
+      <div className="flex-1 flex flex-col justify-center max-w-xl mt-[87px] mb-[87px]">
         <h3 className="font-poppins font-bold text-[32px] leading-[44px] text-[#222] mb-4">Take The First Step...</h3>
         <ol className="font-poppins font-medium text-[16px] leading-[32px] tracking-normal text-[#222] mb-4 list-decimal list-inside">
           <li>Complete the application form located at the bottom of this page.</li>
@@ -35,9 +35,17 @@ export default function GetInvolvedStep() {
             </ol>
           </li>
         </ol>
-        <button onClick={() => setModalOpen(true)} className="font-poppins w-fit px-6 py-2 rounded-full bg-[#FF8B71] text-white font-semibold shadow-md hover:bg-[#ff6a3d] transition-colors duration-200 text-base mt-2">Become An Ambassador</button>
+        <button
+          onClick={() => setModalOpen(true)}
+          className={
+            `${CTA_BUTTON_CLASSES} w-[260px] h-[56px] px-[32px] py-0 rounded-[100px] border-none flex items-center justify-center gap-[10px] font-poppins font-semibold text-[16px] leading-[100%] mt-2`
+          }
+        >
+          Become An Ambassador
+        </button>
         <AmbassadorModal isOpen={modalOpen} onClose={() => setModalOpen(false)} />
       </div>
     </div>
   );
 } 
+import { CTA_BUTTON_CLASSES } from '../common/CTAButtonClasses';
