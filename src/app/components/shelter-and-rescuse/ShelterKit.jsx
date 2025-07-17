@@ -20,16 +20,18 @@ const kit = [
 
 export default function ShelterKit() {
   return (
-    <section className="w-full mb-12">
-      <h2 className="font-poppins font-bold text-2xl md:text-3xl text-[#222] mb-8">What's in the Kit?</h2>
-      <div className="flex flex-col md:flex-row gap-8 justify-center items-stretch">
+    <section className="flex flex-col w-full max-w-[1315px] mx-auto mb-12 gap-[45px]" style={{ minHeight: '561px' }}>
+      <h2 className="font-poppins font-bold text-[45px] leading-[63px] text-[#2E2E38] tracking-normal">What's in the Kit?</h2>
+      <div className="flex flex-row w-full max-w-[1279px] mx-auto gap-[53px] justify-center items-center" style={{ minHeight: '561px' }}>
         {kit.map((item, idx) => (
-          <div key={idx} className="bg-white rounded-2xl shadow p-6 flex flex-col items-center max-w-xs w-full">
-            <div className="mb-4">
-              <Image src={item.image} alt={item.title} width={90} height={90} className="object-contain w-[90px] h-[90px]" priority />
+          <div key={idx} className="bg-white rounded-[14px] border-[2px] border-[#E5E5E5] shadow-lg flex flex-col items-center w-[391px]  p-0">
+            <div className="flex flex-col w-[380px] h-auto mt-[63px] ml-[5.83px] mb-[63px] items-center">
+              <div className="mb-4">
+                <Image src={item.image} alt={item.title} width={90} height={90} className="object-contain w-[90px] h-[90px]" priority />
+              </div>
+              <h3 className="font-poppins font-bold text-base text-[#222] mb-2 text-center">{item.title}</h3>
+              <p className="font-poppins text-[15px] text-[#444] text-center">{item.text}</p>
             </div>
-            <h3 className="font-poppins font-bold text-base text-[#222] mb-2 text-center">{item.title}</h3>
-            <p className="font-poppins text-[15px] text-[#444] text-center">{item.text}</p>
           </div>
         ))}
       </div>
