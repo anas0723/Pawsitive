@@ -57,7 +57,7 @@ export default function ShelterReceive() {
           <KitOrderModal isOpen={modalOpen} onClose={() => setModalOpen(false)} />
         </div>
         {/* Right: Image */}
-        <div className="flex-shrink-0 w-full max-w-[500px] lg:w-[500px] lg:h-[450px] h-[260px] md:h-[340px] relative mt-8 lg:mt-0">
+        <div className="flex-shrink-0 w-full max-w-[500px] lg:w-[500px] lg:h-[649px] h-[260px] md:h-[340px] relative mt-8 lg:mt-0">
           <Image
             src="/images/shelters-rescues/cage-cat.png"
             alt="Cats in Cage"
